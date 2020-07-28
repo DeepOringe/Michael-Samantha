@@ -84,6 +84,13 @@ li:before{
 
 /* Overarching styles */
 
+.text-gradient-r{
+	background: linear-gradient(to right, var(--orange), var(--purple));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 /* Specific styles */
 
@@ -108,7 +115,7 @@ div.banner-layer1{
 	position: sticky;
 	top: -1px;
 
-	background: url(images/parisTexas.JPG), var(--orangeTrans);
+	background: url(images/parisTexas.jpg), var(--orangeTrans);
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -129,8 +136,10 @@ div.banner-layer2{
 	background: linear-gradient(transparent, var(--purpleTrans));
 }
 
-
 div.yahoo{
-	background: var(--purpleTrans);
+	display: flex;
 }
+
+
+
 
