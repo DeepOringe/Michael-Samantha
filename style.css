@@ -425,13 +425,13 @@ p.label{
 }
 
 #gallery div.polaroidPhoto.thirdPhoto{
-	background: url(images/whistfulC.JPG);
-	background-position: center center;
+	background: url(images/jump1.JPG);
+	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	animation-name: alternate_background_thirdPhoto;
-	animation-duration: 2s;
+	animation-duration: 6s;
 	animation-timing-function: none;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
@@ -443,34 +443,67 @@ p.label{
 
 @keyframes alternate_background_thirdPhoto{
 	0% { 
-		background: url(images/wistfulC.JPG);
-		background-position: center center;
+		background: url(images/jump1.JPG);
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	50% { 
-		background: url(images/wistfulC.JPG);
-		background-position: center center;
+	20% { 
+		background: url(images/jump1.JPG);
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}  
-	51% { 
-		background: url(images/wistfulD.JPG);
-		background-position: center center;
+	21% { 
+		background: url(images/jump2.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	40% { 
+		background: url(images/jump2.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	41% { 
+		background: url(images/jump3.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	60% { 
+		background: url(images/jump3.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}  
+	61% { 
+		background: url(images/jump4.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	80% { 
+		background: url(images/jump4.JPG);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	81% { 
+		background: url(images/jump6.JPG);
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	100% { 
-		background: url(images/wistfulD.JPG);
-		background-position: center center;
+		background: url(images/jump6.JPG);
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
+	}  
+	
 }
-
-
-
-
 
 /* Form styling */
 form{
