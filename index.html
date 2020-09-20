@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Michael and Samantha are getting married! Begin excitement now." />
@@ -15,10 +17,108 @@
 </head>
 
 <body>
-	<div class="banner">
+	<div id="banner">
 		<h1>Oh, no!</h1>
-		<h1>We're getting married!</h1>
+		<h1 class="slide_in">We're getting married!</h1>
 	</div>
-	<div></div>
+	<div id="overview" class="displayFlex">
+		<h1>Michael + Samantha</h1>
+		<h1>21 December 2020</h1>
+		<h2  class="cursive">"The longest night of the year..."</h2>
+		<h2 class="cursive">-Bob and Betty Winchester</h2>
+		
+	</div>
+	<div id="ceremony" class="displayFlex invertColors">
+		<h1>The Ceremony</h1>
+		<p>We will be having a small civil ceremony at the courthouse in Columbus, Ohio. At 2:10pm on December 21, 2020, Judge Robert G. Montgomery will solemnify our marriage.
+		<p>Circumstances permitting, we hope to celebrate by spending the holidays with our family and friends in Ohio.</p>
+		<h3>21 December 2020</h3>
+		<h3>Columbus, Ohio</h3>
+	</div>
+
+	<div id="registry" class="displayFlex invertColors">
+			<h1>The Registry</h1>
+			<p>Thank you for your kindness! We often discuss the importance of family and community in our lives, and the way we would like to celebrate our wedding is by completing a project in memory of Samantha's Aunt Jenny.</p>
+			<p>Help us build the Jennifer Flynn Memorial Pathway and make ADA accessible pathways at the Franklinton Farms Learning Garden.</p>
+			<a id="jennysway" class="inset" target="_blank" href="https://franklintonfarms.org/jennysway">Click here to read more</a>
+			<!-- <p>Jenny was  an inspiration to both Samantha and Michael. She was a force of joy, always optimistic and working to make the world a better place. She championed Franklinton Farms, the Columbus City Council, and the Center for Disability Empowerment, and since her passing we have been working with these institutions to create this community project to honor that legacy.</p> -->
+	</div>
+	
+	<div id="gallery" class="displayFlex">
+		<div class="polaroidContainer skewLeft">
+			<div class="polaroidPhoto firstPhoto"></div>
+			<p class="label">White Sands</p>
+		</div>
+		<div class="polaroidContainer skewRight">
+			<div class="polaroidPhoto secondPhoto"></div>
+			<p class="label">National Park</p>
+		</div>
+		<div class="polaroidContainer skewLeft">
+			<div class="polaroidPhoto thirdPhoto"></div>
+			<p class="label">August 2020</p>
+		</div>
+	</div>
+
+	<div id="advice" class="displayFlex invertColors">
+		<h1>Give us advice</h1>
+		<p>Life advice? Relationship advice? We'd love to hear it!</p>
+
+		<form id="adviceForm" class="inset" action="" method="get">
+			
+			<h3>Share your wisdom</h3>
+
+			<label for="advice">Write your thoughts here: </label>
+			<textarea id="advice" name="advice" rows="5" cols="1" placeholder="Say anything!"></textarea>
+
+			<label for="file">Add a photo (for posterity!):</label>
+			<input type="file" id="file" name="file">
+
+			<input type="button"  value="Submit"/>
+			<p id="adviceForm_submitted"></p>
+
+		</form>
+
+	</div>
+	<div class="displayFlex invertColors">	
+		<h1>Stay in touch</h1>
+		<p>Would you like to receive totally fabulous (or comically mediocre) holiday cards?</p>
+		
+		<form id="contactForm" class="inset" action="" method="get">
+		
+			<h3>Update your contact information</h3>
+
+			<label for="name">Name: </label>
+			<input type="text" name="name" id="name">
+			
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email">
+			
+			<label for="address">Address: </label>
+			<input type="address" name="address" id="address">
+
+			<label for="city">City: </label>
+			<input type="city" name="city" id="city">
+
+			<label for="state">State: </label>
+			<input type="state" name="state" id="state">
+
+			<label for="country">Country: </label>
+			<input type="country" name="country" id="country">
+
+			<label for="postcode">Postal Code: </label>
+			<input type="text" name="postcode" id="postcode">
+			
+			<input type="button" value="Submit" />
+			<p id="contactForm_submitted"></p>
+		
+		</form>		
+
+		<h3>Or write to us!</h3>
+		<p>We love notes! Our current address is </p>
+		<p class="inset">9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+
+	</div>
+
 </body>
 </html>
+
