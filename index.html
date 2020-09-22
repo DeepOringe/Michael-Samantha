@@ -21,37 +21,39 @@
 		<h1>Oh, no!</h1>
 		<h1 class="slide_in">We're getting married!</h1>
 	</div>
-	<div id="overview" class="displayFlex">
-		<h1>Michael + Samantha</h1>
-		<h1>21 December 2020</h1>
-		<h2  class="cursive">"The longest night of the year..."</h2>
-		<h2 class="cursive">-Bob and Betty Winchester</h2>
+
+	<div id="overview" class="flex100 dflexColumn">
+		<h1 class="blueText">Michael + Samantha</h1>
+		<h1 class="blueText">21 December 2020</h1>
+		<h2  class="blueText cursive">"The longest night of the year..."</h2>
+		<h2 class="blueText cursive">-Bob and Betty Winchester</h2>
 		
 	</div>
-	<div id="ceremony" class="displayFlex invertColors">
+
+	<div id="ceremony" class="flex800 dflexColumn invertColors">
 		<h1>The Ceremony</h1>
-		<p>We will be having a small civil ceremony at the courthouse in Columbus, Ohio. At 2:10pm on December 21, 2020, Judge Robert G. Montgomery will solemnify our marriage.
+		<p>We will be having a small civil ceremony at the courthouse in Columbus, Ohio. With Samantha's grandprents' blessing, we have borrowed their December 21 wedding anniversary. At 2:10pm on December 21, 2020, Judge Robert G. Montgomery will solemnify our marriage.
 		<p>Circumstances permitting, we hope to celebrate by spending the holidays with our family and friends in Ohio.</p>
 		<h3>21 December 2020</h3>
 		<h3>Columbus, Ohio</h3>
 	</div>
 
-	<div id="registry" class="displayFlex invertColors">
+	<div id="registry" class="flex800 dflexColumn invertColors">
 			<h1>The Registry</h1>
-			<p>Thank you for your kindness! We often discuss the importance of family and community in our lives, and the way we would like to celebrate our wedding is by completing a project in memory of Samantha's Aunt Jenny.</p>
+			<p>Thank for your kindness and desire to give us a gift. We have so many things in our lives, but what we value most is family and community. The way we would like to celebrate our wedding is by completing a project in memory of Samantha's Aunt Jenny.</p>
 			<p>Help us build the Jennifer Flynn Memorial Pathway and make ADA accessible pathways at the Franklinton Farms Learning Garden.</p>
-			<a id="jennysway" class="inset" target="_blank" href="https://franklintonfarms.org/jennysway">Click here to read more</a>
+			<a id="jennysway" class="insetColors" target="_blank" href="https://franklintonfarms.org/jennysway">Click here to read more</a>
 			<!-- <p>Jenny was  an inspiration to both Samantha and Michael. She was a force of joy, always optimistic and working to make the world a better place. She championed Franklinton Farms, the Columbus City Council, and the Center for Disability Empowerment, and since her passing we have been working with these institutions to create this community project to honor that legacy.</p> -->
 	</div>
 	
-	<div id="gallery" class="displayFlex">
+	<div id="gallery" class="flex100 dflexColumn">
 		<div class="polaroidContainer skewLeft">
 			<div class="polaroidPhoto firstPhoto"></div>
-			<p class="label">White Sands</p>
+			<p class="label">White Sands National Park</p>
 		</div>
 		<div class="polaroidContainer skewRight">
 			<div class="polaroidPhoto secondPhoto"></div>
-			<p class="label">National Park</p>
+			<p class="label">101&#730F and perfect</p>
 		</div>
 		<div class="polaroidContainer skewLeft">
 			<div class="polaroidPhoto thirdPhoto"></div>
@@ -59,64 +61,111 @@
 		</div>
 	</div>
 
-	<div id="advice" class="displayFlex invertColors">
+	<div id="advice" class="flex800 dflexColumn invertColors">
 		<h1>Give us advice</h1>
 		<p>Life advice? Relationship advice? We'd love to hear it!</p>
 
-		<form id="adviceForm" class="inset" action="" method="get">
+		<form id="adviceForm" class="insetColors" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDDdNd_a77CqraS8LNQ4HHNTiIQEL74XKiHJj37NU8X_vlLA/formResponse" method="POST">
 			
 			<h3>Share your wisdom</h3>
 
-			<label for="advice">Write your thoughts here: </label>
-			<textarea id="advice" name="advice" rows="5" cols="1" placeholder="Say anything!"></textarea>
+			<label for="name">Your name(s): </label>
+			<input type="text" name="entry.1269859815" id="name">
+
+			<label for="advice">Share your thoughts here: </label>
+			<textarea id="advice" name="entry.621602604" rows="5" cols="1" placeholder="Say anything!"></textarea>
 
 			<label for="file">Add a photo (for posterity!):</label>
 			<input type="file" id="file" name="file">
 
-			<input type="button"  value="Submit"/>
+			<button type="submit">Submit</button>
 			<p id="adviceForm_submitted"></p>
 
 		</form>
 
 	</div>
-	<div class="displayFlex invertColors">	
+	<div id="contact" class="flex800 dflexColumn invertColors">	
 		<h1>Stay in touch</h1>
 		<p>Would you like to receive totally fabulous (or comically mediocre) holiday cards?</p>
 		
-		<form id="contactForm" class="inset" action="" method="get">
+		<form id="contactForm" class="insetColors" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjlsVXa4isPqjM7I2mCw2bV5USEYQqkHja8WjARZJ85wq8lA/formResponse" method="POST">
 		
 			<h3>Update your contact information</h3>
 
 			<label for="name">Name: </label>
-			<input type="text" name="name" id="name">
+			<input type="text" name="entry.1327133089" id="name">
 			
 			<label for="email">Email: </label>
-			<input type="email" name="email" id="email">
+			<input type="email" name="entry.1333376261" id="email">
 			
 			<label for="address">Address: </label>
-			<input type="address" name="address" id="address">
+			<input type="address" name="entry.461411886" id="address">
 
 			<label for="city">City: </label>
-			<input type="city" name="city" id="city">
+			<input type="city" name="entry.684140146" id="city">
 
-			<label for="state">State: </label>
-			<input type="state" name="state" id="state">
+			<label for="state">State/Province: </label>
+			<input type="state" name="entry.356617079" id="state">
 
 			<label for="country">Country: </label>
-			<input type="country" name="country" id="country">
+			<input type="country" name="entry.1148550278" id="country">
 
 			<label for="postcode">Postal Code: </label>
-			<input type="text" name="postcode" id="postcode">
+			<input type="text" name="entry.1242051022" id="postcode">
 			
-			<input type="button" value="Submit" />
+			<button type="submit">Submit</button>
 			<p id="contactForm_submitted"></p>
 		
 		</form>		
 
-		<h3>Or write to us!</h3>
-		<p>We love notes! Our current address is </p>
-		<p class="inset">9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+		<h3>Or, write to us!</h3>
+		<p>We love notes! (Seriously, we LOVE them!) Our current address is </p>
+		<p class="insetColors">9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
 
+	</div>
+
+	<div id="loves" class="flex100 dflexColumn overview">
+		<h1 class="cursive blueText">And just for fun...</h1>
+		<h2 class="blueText">Here are some things we love</h2>
+
+		<div class="">
+			<ul>
+				
+			</ul>
+
+		</div>
+	</div>
+
+
+	<div id="vote" class="flex800 dflexColumn invertColors">
+		<h1>Cast your vote</h1>
+		<p>Weigh in on the hot question of 2020--</p>
+		<form id="lastnameForm" class="insetColors" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeqWjqdsHcszqZqL59j2STiKD5QEZH0TL9vmrJ_gx70NwHNZQ/formResponse" method="POST">
+			<h3>What should our last name be?</h3>
+			
+			
+			<div>
+				<input type="radio" id="Siefert"
+				 name="entry.843964884" value="Siefert">
+				<label for="Siefert">Siefert</label>
+			</div>
+				
+			<div>
+				<input type="radio" id="Brennan"
+				 name="entry.843964884" value="Brennan">
+				<label for="Brennan">Brennan</label>
+			</div>
+
+			<div>
+				<input type="radio" id="Corleone"
+				 name="entry.843964884" value="Corleone">
+				<label for="Corleone">Corleone</label>
+			</div>
+				
+			<button type="submit">Submit</button>
+			<p id="contactForm_submitted"></p>
+		</form>
+		
 	</div>
 
 </body>
