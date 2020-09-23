@@ -235,10 +235,14 @@ div.invertColors p{
 }
 
 #banner h1{
-	font-size: 5em;
-	font-size: calc(3em + 5vw);
-	
 	margin: 1em 0 -.4em 0;
+}
+
+@media all and (min-width: 700px){
+	#banner h1{
+		font-size: 5em;
+		font-size: calc(3em + 5vw);
+	}
 }
 
 @media all and (max-width: 800px){
