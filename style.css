@@ -9,10 +9,16 @@
 	--standard-box-shadow: 2px 2px 5px rgba(1,1,1,.35);
 	--standard-emphasis: hsl(0, 0, 15%);
 
-	--blue: #5C6178;
+
+	--spacecadet: rgba(54, 52, 87, 1);
+	--lightblue: rgba(110, 152, 190, 1);
+	--lightestblue: rgba(130, 165, 196, 1);
+	--lightestlight: rgba(241, 241, 241, 1);
+	--orange: rgba(246, 115, 71, 1);
+	/* --blue: #5C6178;
 	--lightblue: #6E98BE;
 	--lightestblue: #82A5C4;
-	--orange: #F67347;
+	--orange: #F67347; */
 	
 	/* --blue: #407eb5;
 	--lightblue: #6096ba;
