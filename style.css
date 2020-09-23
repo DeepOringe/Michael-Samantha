@@ -15,17 +15,6 @@
 	--lightestblue: rgba(130, 165, 196, 1);
 	--lightestlight: rgba(241, 241, 241, 1);
 	--orange: rgba(246, 115, 71, 1);
-	/* --blue: #5C6178;
-	--lightblue: #6E98BE;
-	--lightestblue: #82A5C4;
-	--orange: #F67347; */
-	
-	/* --blue: #407eb5;
-	--lightblue: #6096ba;
-	--lightestblue: #90abb6;
-	--orange: #fe6c2c;
-	--purple: rgba(71, 15, 244, 1); */
-	
 }
 
 *{
@@ -90,6 +79,14 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	color: var(--orange);
+}
+
+a:visited{
+	color: var(--spacecadet);
+}
+
 li{
 	position: relative;
 	padding-left: 2rem;
@@ -140,7 +137,7 @@ html{
 	display: flex;
 	justify-content: center;
 
-	background-color: #f1f1f1;
+	background-color: var(--lightestlight);
 }
 
 body{
@@ -215,10 +212,9 @@ div.invertColors p{
 	justify-content: space-between;
 
 	width: 100%;
-	height: 100vh;
-	padding: 15vh 0 5vh 0;
-	
+	height: 100vh;	
 
+	border-bottom: 20px solid var(--orange);
 
 	background: url(images/dino2_new.jpg);
 	background-position: bottom left;
@@ -238,76 +234,52 @@ div.invertColors p{
 
 }
 
+#banner h1{
+	font-size: 5em;
+	font-size: calc(3em + 5vw);
+	
+	margin: 1em 0 -.4em 0;
+}
+
+@media all and (max-width: 800px){
+	#banner{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
 @keyframes alternate_background{
 	 0% { 
-		background: url(images/dino1_new.jpg);
+		background: url(images/dino2_new.jpg);
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		background-size: cover;
 	 }
 	 50% { 
-		background: url(images/dino1_new.jpg);
+		background: url(images/dino2_new.jpg);
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		background-size: cover;
 	 }  
 	 51% { 
-		background: url(images/dino2_new.jpg);
+		background: url(images/dino1_new.jpg);
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		background-size: cover;
 	   }
 	 100% { 
-		background: url(images/dino2_new.jpg);
+		background: url(images/dino1_new.jpg);
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		background-size: cover;
 	   }
 	}
 
-#banner h1{
-	font-size: 5em;
-	font-size: calc(3em + 5vw);
-}
-
-h1.slide_in{
-	margin-bottom: -2em;
-	opacity: 0;
-
-	animation-name: slide_up;
-	animation-duration: .5s;
-	animation-timing-function: ease-in;
-	animation-delay: 1s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-play-state: running;
-}
-
-@keyframes slide_up{
-	0%{
-		margin-bottom: -2em;
-		opacity: 0;
-	}
-	50%{
-		opacity: 1
-	}
-	100%{
-		margin-bottom: 0;
-		opacity: 1;
-		
-	}
-
-}
-
 #overview{
 	padding: 10vh 0 15vh 0;
-	border-top: 10px solid var(--orange);
 }
 
-#jennysway:hover{
-	color: var(--orange);
-}
 /* Photo gallery styling */
 
 #gallery{
@@ -605,8 +577,3 @@ input[id="name"], input[id="email"], input[id="address"]{
 		flex-direction: column;
 	}
 }
-
-/* Lastname form layout */
-
-
-
