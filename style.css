@@ -287,20 +287,20 @@ div.invertColors p{
 /* Photo gallery styling */
 
 #gallery{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	max-width: 100%; /*prevents blowout from skewed photos*/
 }
+
 
 div.polaroidContainer{
 	box-sizing: border-box;
 	margin: 1rem 1rem 2rem 1rem;
+	
 	width: 40vw;
 	height: 50vw;
 
 	display: grid;
 	grid-template-columns: 15px 1fr 15px;
-	grid-template-rows: 15px 80% 1fr;
+	grid-template-rows: 15px 1fr auto;
 
 	background-color: white;
 
@@ -308,17 +308,17 @@ div.polaroidContainer{
 	box-shadow: var(--standard-box-shadow);
 }
 
-/* @media all and (max-width: 1000px){
-	div.polaroidContainer{
-		width: 60vw;
-		height: 70vw;
-	}
-} */
-
 @media all and (max-width: 1200px){
 	div.polaroidContainer{
 		width: 80vw;
 		height: 90vw;
+	}
+}
+
+@media all and (max-width: 800px){
+	div.polaroidContainer{
+		width: 80vw;
+		height: 120vw;
 	}
 }
 
@@ -338,10 +338,13 @@ div.polaroidPhoto{
 
 p.label{
 	grid-area: 3 / 2 / 4 / 3;
+
+	padding: 1em 0 1.2em 0;
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 
 	font-family: 'Sacramento', cursive;
 	font-weight: 400;
@@ -411,50 +414,6 @@ p.label{
 
 @keyframes alternate_background_secondPhoto{
 	0% { 
-		background: url(images/zenA.JPG);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	50% { 
-		background: url(images/zenA.JPG);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}  
-	51% { 
-		background: url(images/zenB.JPG);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	100% { 
-		background: url(images/zenB.JPG);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-}
-
-#gallery div.polaroidPhoto.thirdPhoto{
-	background: url(images/jump1.JPG);
-	background-position: top left;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	animation-name: alternate_background_thirdPhoto;
-	animation-duration: 6s;
-	animation-timing-function: none;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: none;
-	animation-play-state: running;
-} 
-
-
-@keyframes alternate_background_thirdPhoto{
-	0% { 
 		background: url(images/jump1.JPG);
 		background-position: top left;
 		background-repeat: no-repeat;
@@ -515,6 +474,50 @@ p.label{
 		background-size: cover;
 	}  
 	
+}
+
+
+#gallery div.polaroidPhoto.thirdPhoto{
+	background: url(images/jump1.JPG);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	animation-name: alternate_background_thirdPhoto;
+	animation-duration: 6s;
+	animation-timing-function: none;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+} 
+
+@keyframes alternate_background_thirdPhoto{
+	0% { 
+		background: url(images/zenA.JPG);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	50% { 
+		background: url(images/zenA.JPG);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}  
+	51% { 
+		background: url(images/zenB.JPG);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	100% { 
+		background: url(images/zenB.JPG);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 /* Form styling */
