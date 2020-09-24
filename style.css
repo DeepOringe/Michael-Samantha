@@ -142,7 +142,6 @@ html{
 
 body{
 	flex: 0 1 2000px;
-	max-width: 100%; /*prevents blowout from skewed photos*/
 
 	display: flex;
 	flex-wrap: wrap;
@@ -288,13 +287,15 @@ div.invertColors p{
 /* Photo gallery styling */
 
 #gallery{
-	max-width: 100%; /*prevents blowout from skewed photos*/
+	/*Well.... this is what I'm doing to prvent overflow-x, since I can't have overflow-y visible and overflow-x hidden.*/
+	overflow: hidden;
+	padding: 10rem 0 10rem 0;
+	margin: -10rem 0 -10rem 0;
 }
 
 
 div.polaroidContainer{
 	box-sizing: border-box;
-	margin: 1rem 1rem 2rem 1rem;
 	
 	width: 40vw;
 	height: 50vw;
@@ -316,19 +317,19 @@ div.polaroidContainer{
 	}
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 600px){
 	div.polaroidContainer{
-		width: 80vw;
+		width: 100vw;
 		height: 120vw;
 	}
 }
 
 .skewLeft{
-	transform: rotate(-20deg);
+	transform: rotate(-15deg);
 }
 
 .skewRight{
-	transform: rotate(20deg);
+	transform: rotate(15deg);
 }
 
 div.polaroidPhoto{
