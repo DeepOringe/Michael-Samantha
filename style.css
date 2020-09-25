@@ -196,7 +196,7 @@ div.invertColors p{
 
 
 
-/* Spection styles*/
+/* Section styles*/
 
 #banner{
 	position: relative;
@@ -247,7 +247,7 @@ div.invertColors p{
 }
 
 
-#gallery{
+#gallery, #gallery2{
 	/*Well.... this is what I'm doing to prvent overflow-x, since I can't combine overflow-y:visible and overflow-x:hidden.*/
 	overflow: hidden;
 	padding: 10rem 0 10rem 0;
@@ -437,6 +437,29 @@ p.label{
 	animation: alternate_background 2s none 1s infinite;
 }
 
+#gallery2 div.polaroidPhoto.fourthPhoto{
+	background: url(images/dino3.JPG);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+
+#gallery2 div.polaroidPhoto.fourthPhoto:before{    
+	content: "";
+	background-image: url(images/dino4.JPG);
+	background-position: top center;
+	background-repeat: repeat-x;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+
+	opacity: 0;
+	animation: alternate_background 2s none 1s infinite;
+}
+
 /* Form styling */
 form{
 	width: 100%;
@@ -498,6 +521,13 @@ input[id="name"], input[id="email"], input[id="address"]{
 		display: flex;
 		flex-direction: column;
 	}
+}
+
+
+#footer{
+	background: var(--spacecadet);
+	border-top: 20px solid var(--orange);
+	padding: 3rem;
 }
 
 
