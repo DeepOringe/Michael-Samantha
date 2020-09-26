@@ -198,6 +198,7 @@ div.invertColors p{
 
 /* Section styles*/
 
+
 #banner{
 	position: relative;
 
@@ -233,6 +234,17 @@ div.invertColors p{
 #banner h1{
 	position: relative; /*Relative position so it shows up with background position for alternate animation*/
 	margin: 1em 0 -.4em 0; /*just for a fun effect with border-bottom*/
+}
+
+h1.tagline{
+	opacity: 0;
+	margin: 1em 0 -1em 0;
+
+	animation-name: text-enter;
+	animation-delay: 3s;
+	animation-duration: .2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 @media all and (min-width: 800px){
@@ -571,5 +583,16 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 	to{
 		opacity: 1;
+	}
+}
+
+@keyframes text-enter{
+	from{
+		opacity: 0;
+		margin: 1em 0 -1em 0;
+	}
+	to{
+		opacity: 1;
+		margin: 1em 0 -.4em 0;
 	}
 }
