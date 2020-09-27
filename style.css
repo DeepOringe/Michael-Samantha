@@ -4,17 +4,17 @@
 	font-size: 18px;
 
 	/* Root variables */
-
-	--standard-box-shadow: 0px 2px 4px rgba(0, 0, 0, .18);
-	--standard-box-shadow: 2px 2px 5px rgba(1,1,1,.35);
-	--standard-emphasis: hsl(0, 0, 15%);
-
-
 	--spacecadet: rgba(54, 52, 87, 1);
 	--lightblue: rgba(110, 152, 190, 1);
 	--lightestblue: rgba(130, 165, 196, 1);
 	--lightestlight: rgba(241, 241, 241, 1);
 	--orange: rgba(246, 115, 71, 1);
+
+	--standard-box-shadow: 0px 2px 4px rgba(0, 0, 0, .18);
+	--standard-box-shadow: 2px 2px 5px rgba(1,1,1,.35);
+	--standard-emphasis: hsl(0, 0, 15%);
+	--standard-border: 10px solid var(--orange);
+	--thick-border: 20px solid var(--orange);
 }
 
 *{
@@ -27,6 +27,11 @@
 	
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 h1{
@@ -80,20 +85,22 @@ a{
  
 	display: inline-block;     
 	position: relative;    
-	z-index: 1;     
+	z-index: 3;     
 	padding: 2em;     
 	margin: -2em;
 	
 	margin-top: 1em;
+
+	box-shadow: var(--standard-box-shadow);
 }
 
 a:hover{
 	color: var(--orange);
 }
 
-a:visited{
+/* a:visited{
 	color: var(--spacecadet);
-}
+} */
 
 li{
 	position: relative;
@@ -170,7 +177,7 @@ div.invertColors{
 
 	box-sizing: border-box;
 	margin: 3rem;
-	border: 10px solid var(--orange);
+	border: var(--standard-border);
 	padding: 1rem 1rem 2rem 1rem;
 }
 
@@ -201,9 +208,9 @@ div.invertColors p{
 
 #banner{
 	position: relative;
-	z-index: 1;
+	z-index: 15;
 
-	border-bottom: 20px solid var(--orange);
+	border-bottom: var(--thick-border);
 
 	width: 100%;
 	height: 100vh;	
@@ -260,7 +267,7 @@ h1.tagline{
 }
 
 
-#gallery, #gallery2{
+div.skewContainer{
 	/*Well.... this is what I'm doing to prvent overflow-x, since I can't combine overflow-y:visible and overflow-x:hidden.*/
 	overflow: hidden;
 	padding: 10rem 0 10rem 0;
@@ -269,6 +276,7 @@ h1.tagline{
 
 
 div.polaroidContainer{
+	z-index: 5;
 	box-sizing: border-box;
 	
 	width: 40vw;
@@ -330,14 +338,14 @@ p.label{
 	color: var(--orange);
 }
 
-#gallery div.polaroidPhoto.firstPhoto{
+div.polaroidPhoto.firstPhoto{
 	background: url(images/niceA.JPG); /*sets main photo and fallback if animation fails*/
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
 } 
 
-#gallery div.polaroidPhoto.firstPhoto:before{    
+div.polaroidPhoto.firstPhoto:before{    
 	content: "";
 	background-image: url(images/niceB.JPG);
 	background-position: bottom left;
@@ -353,7 +361,7 @@ p.label{
 	animation: alternate_background 2s none 1s infinite;
 }
 
-#gallery div.polaroidPhoto.secondPhoto{
+div.polaroidPhoto.secondPhoto{
 	background: url(images/jump1.JPG);
 	background-position: top left;
 	background-repeat: no-repeat;
@@ -361,7 +369,7 @@ p.label{
 } 
 
 
-#gallery div.polaroidPhoto.secondPhoto:before{    
+div.polaroidPhoto.secondPhoto:before{    
 	content: "";
 	background-image: url(images/jump2.JPG);
 	background-position: bottom left;
@@ -377,7 +385,7 @@ p.label{
 	animation: alternate_background_1-5 5s none 1s infinite;
 }
 
-#gallery div.polaroidPhoto.secondPhoto:after{    
+div.polaroidPhoto.secondPhoto:after{    
 	content: "";
 	background-image: url(images/jump3.JPG);
 	background-position: bottom left;
@@ -393,7 +401,7 @@ p.label{
 	animation: alternate_background_1-5 5s none 2s infinite;
 }
 
-#gallery div.polaroidPhoto.secondPhoto span.animation_placeholder:before{    
+div.polaroidPhoto.secondPhoto span.animation_placeholder:before{    
 	content: "";
 	background-image: url(images/jump4.JPG);
 	background-position: bottom left;
@@ -410,7 +418,7 @@ p.label{
 	animation: alternate_background_1-5 5s none 3s infinite;
 }
 
-#gallery div.polaroidPhoto.secondPhoto span.animation_placeholder:after{    
+div.polaroidPhoto.secondPhoto span.animation_placeholder:after{    
 	content: "";
 	background-image: url(images/jump6.JPG);
 	background-position: bottom left;
@@ -427,14 +435,14 @@ p.label{
 	animation: alternate_background_1-5 5s none 4s infinite;
 }
 
-#gallery div.polaroidPhoto.thirdPhoto{
+div.polaroidPhoto.thirdPhoto{
 	background: url(images/zenA.JPG);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 } 
 
-#gallery div.polaroidPhoto.thirdPhoto:before{    
+div.polaroidPhoto.thirdPhoto:before{    
 	content: "";
 	background-image: url(images/zenB.JPG);
 	background-position: top center;
@@ -450,14 +458,14 @@ p.label{
 	animation: alternate_background 2s none 1s infinite;
 }
 
-#gallery2 div.polaroidPhoto.fourthPhoto{
+div.polaroidPhoto.fourthPhoto{
 	background: url(images/dino3.JPG);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 } 
 
-#gallery2 div.polaroidPhoto.fourthPhoto:before{    
+div.polaroidPhoto.fourthPhoto:before{    
 	content: "";
 	background-image: url(images/dino4.JPG);
 	background-position: top center;
@@ -473,14 +481,14 @@ p.label{
 	animation: alternate_background 2s none 1s infinite;
 }
 
-#fifthPhoto{
+/* div.polaroidPhoto.fifthPhoto{
 	background: url(images/wistfulC.JPG);
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
 } 
 
-#fifthPhoto:before{    
+div.polaroidPhoto.fifthPhotobefore{    
 	content: "";
 	background-image: url(images/wistfulD.JPG);
 	background-position: bottom left;
@@ -494,7 +502,7 @@ p.label{
 
 	opacity: 0;
 	animation: alternate_background 2s none 1s infinite;
-}
+} */
 
 /* Form styling */
 form{
@@ -559,6 +567,37 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 }
 
+div.sliderContainer{
+	position: relative;
+	height: 60vh;
+	width: 80vw;
+	display: flex;
+	overflow-x: auto;
+}
+
+div.sliderContainer::-webkit-scrollbar{
+	width: 1px;
+	height: 1px;
+}
+
+img.sliderImg{
+	height: 500px; 
+	width: 500px; 
+
+}
+
+
+#yahoo{
+	position: relative;
+}
+h1.closingTag{
+	z-index: 1;
+	padding: 1rem 0 1rem 0;
+	/* margin-bottom: -2rem; */
+
+	font-size: 5em;
+	font-size: calc(5em + 5vw);
+}
 
 #footer{
 	display: flex; 
@@ -566,12 +605,13 @@ input[id="name"], input[id="email"], input[id="address"]{
 	justify-content: space-between;
 	background: var(--spacecadet);
 
-	margin-top: 3rem;
-	border-top: 20px solid var(--orange);
+	/* margin-top: 3rem; */
+	border-top: var(--thick-border);
 	padding: 1rem;
 }
 
 #dinoIcon{
+	z-index: 10;
 	position: fixed;
 	bottom: 0px; 
 	right: 0px;
