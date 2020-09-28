@@ -568,11 +568,19 @@ input[id="name"], input[id="email"], input[id="address"]{
 }
 
 div.sliderContainer{	
-	width: 80vw;
+	position: relative;
+	
+	max-width: 1650px;
+	width: 100vw;
 	
 	display: flex;
 	overflow-x: auto;
 	align-items: baseline;
+
+	scroll-snap-type: x mandatory;
+	
+	border-radius: 10px;
+
 }
 
 div.sliderContainer::-webkit-scrollbar{
@@ -586,9 +594,16 @@ div.sliderContainer::-webkit-scrollbar-thumb{
 	border-radius: 10px;
 }
 
+div.sliderPlaceholder{
+	flex: 0 0 400px;
+	height: 100%;
+}
+
 img.sliderImg{
 	height: 400px; 
 	width: 400px; 
+
+	scroll-snap-align: start;
 }
 
 #footer{
