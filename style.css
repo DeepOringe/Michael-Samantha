@@ -148,6 +148,7 @@ html{
 body{
 	/*limit max-width for huge screens*/
 	flex: 0 1 2000px;
+	max-width: 100%;
 
 	/*create a generally centered flex layout with either one or two columns*/
 	display: flex;
@@ -158,6 +159,7 @@ body{
 div.flex100{
 	/*one column item*/
 	flex: 1 0 100%;
+	max-width: 100%;
 }
 
 div.flex800{
@@ -567,20 +569,18 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 }
 
-div.sliderContainer{	
-	position: relative;
-	
-	max-width: 1650px;
-	width: 100vw;
+
+div.sliderContainer{
+	width: 100%;
+	max-width: 1700px;
 	
 	display: flex;
 	overflow-x: auto;
-	align-items: baseline;
+	align-items: center;
 
 	scroll-snap-type: x mandatory;
 	
 	border-radius: 10px;
-
 }
 
 div.sliderContainer::-webkit-scrollbar{
@@ -595,17 +595,17 @@ div.sliderContainer::-webkit-scrollbar-thumb{
 }
 
 div.sliderPlaceholder{
-	flex: 0 0 70px;
-	height: 100%;
+	min-height: 300px;
+	min-width: 200px;
 }
 
 img.sliderImg{
-	height: 400px; 
-	width: 400px; 
+	height: 300px; 
+	width: 300px; 
 
 	margin-left: -50px;
 
-	scroll-snap-align: start;
+	scroll-snap-align: end;
 }
 
 #footer{
