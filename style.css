@@ -587,25 +587,24 @@ img.sliderImg{
 }
 
 
-#yahoo{
+/* #yahoo{
 	position: relative;
 }
 h1.closingTag{
 	z-index: 1;
 	padding: 1rem 0 1rem 0;
-	/* margin-bottom: -2rem; */
+	margin-bottom: -2rem;
 
 	font-size: 5em;
 	font-size: calc(5em + 5vw);
-}
+}  */
 
 #footer{
-	display: flex; 
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-gap: 5em;
 	background: var(--spacecadet);
 
-	/* margin-top: 3rem; */
+	margin-top: 3rem;
 	border-top: var(--thick-border);
 	padding: 1rem;
 }
