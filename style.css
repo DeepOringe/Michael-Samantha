@@ -567,41 +567,31 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 }
 
-div.sliderContainer{
-	position: relative;
-	height: 60vh;
+div.sliderContainer{	
 	width: 80vw;
+	
 	display: flex;
 	overflow-x: auto;
+	align-items: baseline;
 }
 
 div.sliderContainer::-webkit-scrollbar{
-	width: 1px;
-	height: 1px;
+	width: 70vw;
+	background-color: white;
+	border-radius: 10px;
+}
+
+div.sliderContainer::-webkit-scrollbar-thumb{
+	background: var(--spacecadet);
+	border-radius: 10px;
 }
 
 img.sliderImg{
-	height: 500px; 
-	width: 500px; 
-
+	height: 400px; 
+	width: 400px; 
 }
-
-
-/* #yahoo{
-	position: relative;
-}
-h1.closingTag{
-	z-index: 1;
-	padding: 1rem 0 1rem 0;
-	margin-bottom: -2rem;
-
-	font-size: 5em;
-	font-size: calc(5em + 5vw);
-}  */
 
 #footer{
-	display: grid;
-	grid-gap: 5em;
 	background: var(--spacecadet);
 
 	margin-top: 3rem;
