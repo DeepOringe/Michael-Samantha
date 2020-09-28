@@ -595,13 +595,15 @@ div.sliderContainer::-webkit-scrollbar-thumb{
 }
 
 div.sliderPlaceholder{
-	flex: 0 0 400px;
+	flex: 0 0 70px;
 	height: 100%;
 }
 
 img.sliderImg{
 	height: 400px; 
 	width: 400px; 
+
+	margin-left: -50px;
 
 	scroll-snap-align: start;
 }
