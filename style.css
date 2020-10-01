@@ -625,7 +625,7 @@ img.sliderImg{
 }
 
 img.sliderImg:nth-of-type(1){
-	margin-left: 100px;
+	margin-left: 150px;
 }
 
 img.sliderImg.doubleWide{
