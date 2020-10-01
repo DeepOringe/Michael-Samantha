@@ -516,7 +516,7 @@ div.polaroidPhoto.sixthPhoto{
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	animation: side-to-side 2s none 0s infinite;
+	/* animation: side-to-side 2s none 0s infinite; */
 } 
 
 div.polaroidPhoto.seventhPhoto{
@@ -525,8 +525,8 @@ div.polaroidPhoto.seventhPhoto{
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	animation: side-to-side 2s none 0s infinite;
-	animation-direction: reverse;
+	/* animation: side-to-side 2s none 0s infinite;
+	animation-direction: reverse; */
 } 
 
 
@@ -621,16 +621,31 @@ div.sliderContainer::-webkit-scrollbar-thumb{
 
 div.sliderPlaceholder{
 	min-height: 300px;
-	min-width: 200px;
+	min-width: 300px;
 }
 
 img.sliderImg{
 	height: 300px; 
 	width: 300px; 
 
-	margin-left: -50px;
+	/* margin-left: -60px; */
 
-	scroll-snap-align: end;
+	scroll-snap-align: center;
+}
+img.sliderImg.dillo{
+	box-sizing: content-box;
+	margin-right: -100px;
+	padding-left: 100px;
+}
+
+img.sliderImg.doubleWide{
+	height: 300px;
+	width: 600px;
+}
+
+div.sliderContainer iframe{
+	height: 300px;
+	scroll-snap-align: center;
 }
 
 #footer{
