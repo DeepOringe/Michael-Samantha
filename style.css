@@ -487,33 +487,6 @@ div.polaroidPhoto.fourthPhoto:before{
 	animation: alternate_background 2s none 1s infinite;
 }
 
-/* div.polaroidPhoto.fifthPhoto{
-	background: url(images/wistfulC.JPG);
-	background-position: bottom left;
-	background-repeat: no-repeat;
-	background-size: cover;
-} 
-
-div.polaroidPhoto.fifthPhotobefore{    
-	content: "";
-	background-image: url(images/wistfulD.JPG);
-	background-position: bottom left;
-	background-repeat: repeat-x;
-	background-size: cover;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-
-	opacity: 0;
-	animation: alternate_background 2s none 1s infinite;
-} */
-
-#gallery3 div.polaroidContainer:nth-of-type(1){
-	z-index: 6;
-}
-
 div.polaroidPhoto.sixthPhoto{
 	background: url(images/kickSam.JPG);
 	background-position: top left;
@@ -601,7 +574,6 @@ input[id="name"], input[id="email"], input[id="address"]{
 
 div.sliderContainer{
 	width: 100%;
-	max-width: 1700px;
 	
 	display: flex;
 	overflow-x: auto;
@@ -609,7 +581,7 @@ div.sliderContainer{
 
 	scroll-snap-type: x mandatory;
 	
-	border-radius: 10px;
+	border-radius: 10px; /*to match scrollbar if there is background*/
 }
 
 div.sliderContainer::-webkit-scrollbar{
@@ -643,7 +615,7 @@ div.sliderContainer iframe{
 	border: none;
 }
 
-img.sliderImg, div.sliderContainer>iframe{
+div.sliderContainer>*{
 	scroll-snap-align: center;
 }
 
@@ -736,4 +708,3 @@ img.sliderImg, div.sliderContainer>iframe{
 		background-position: top right;
 	}
 }
-
