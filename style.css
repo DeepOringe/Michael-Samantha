@@ -571,8 +571,8 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 }
 
-
 div.sliderContainer{
+	position: relative; /*allow scrollbar to be relatively positioned*/
 	width: 100%;
 	
 	display: flex;
@@ -581,10 +581,12 @@ div.sliderContainer{
 
 	scroll-snap-type: x mandatory;
 	
-	border-radius: 10px; /*to match scrollbar if there is background*/
+	border-radius: 10px; /*match scrollbar if there is background*/
 }
 
 div.sliderContainer::-webkit-scrollbar{
+	z-index: 15; /*make scrollbar accessible above the margin-fix for intentional overflow-y in #galleries*/ 
+
 	width: 70vw;
 	background-color: white;
 	border-radius: 10px;
