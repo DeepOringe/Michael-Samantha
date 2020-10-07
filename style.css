@@ -426,7 +426,7 @@ div.polaroidPhoto.secondPhoto span.animation_placeholder:before{
 
 div.polaroidPhoto.secondPhoto span.animation_placeholder:after{    
 	content: "";
-	background-image: url(images/jump6.JPG);
+	background-image: url(images/jump5.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -497,7 +497,7 @@ div.polaroidPhoto.sixthPhoto{
 } 
 
 div.polaroidPhoto.seventhPhoto{
-	background: url(images/kickMichael.JPG);
+	background: url(images/kickMike.JPG);
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: cover;
