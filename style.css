@@ -154,9 +154,9 @@ html{
 }
 
 body{
-	/*limit max-width for huge screens*/
-	flex: 0 1 2000px;
-	max-width: 100%;
+	max-width: 2000px;
+	flex: 0 1 2000px; /*limit max-width for huge screens*/
+	
 
 	/*create a generally centered flex layout with either one or two columns*/
 	display: flex;
