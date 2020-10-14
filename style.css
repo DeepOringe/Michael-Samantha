@@ -154,9 +154,7 @@ html{
 }
 
 body{
-	max-width: 2000px;
 	flex: 0 1 2000px; /*limit max-width for huge screens*/
-	
 
 	/*create a generally centered flex layout with either one or two columns*/
 	display: flex;
@@ -166,20 +164,19 @@ body{
 
 div.flex100{
 	/*one column item*/
-	flex: 1 0 100%;
-	max-width: 100%;
+	flex: 0 0 100%;
 }
 
 div.flex800{
-	/*two column item for big screens, or wrap for one column*/
+	/*two column item for big screens, else wrap to one column*/
 	flex: 0 1 800px;
 }
 
 div.dflexColumn{
-	/*single column block layout*/
+	/*single column layout*/  
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center; 
 }
 
 div.invertColors{
@@ -579,9 +576,12 @@ input[id="name"], input[id="email"], input[id="address"]{
 	}
 }
 
+
+/* Formatting for the #likes horizontal flexbox slider */
+
 div.sliderContainer{
 	position: relative; /*allow scrollbar to be relatively positioned*/
-	width: 100%;
+	max-width: 98vw;
 	
 	display: flex;
 	overflow-x: auto;
