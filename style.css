@@ -301,6 +301,10 @@ div.polaroidContainer{
 	box-shadow: var(--standard-box-shadow);
 }
 
+div.samKickContainer{
+	z-index: 6; /*.polaroidContainer +1 so that this photo sits on top of sequentials*/
+}
+
 @media all and (max-width: 1200px){
 	div.polaroidContainer{
 		width: 80vw;
