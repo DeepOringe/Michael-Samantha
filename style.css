@@ -154,7 +154,7 @@ html{
 }
 
 body{
-	flex: 0 1 2000px; /*limit max-width for huge screens*/
+	max-width: 2300px; /*limit max-width for huge screens*/
 
 	/*create a generally centered flex layout with either one or two columns*/
 	display: flex;
@@ -287,7 +287,9 @@ div.polaroidContainer{
 	box-sizing: border-box;
 	
 	width: 40vw;
+	max-width: 800px;
 	height: 50vw;
+	max-height: 1000px;
 
 	display: grid;
 	grid-template-columns: 15px 1fr 15px;
