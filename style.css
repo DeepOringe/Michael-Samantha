@@ -651,12 +651,13 @@ div.sliderContainer>*{
 }
 
 p.exitMusic{
+	display: inline-block;
 	color: var(--orange);
-	font-size: 2em;
+	font-size: 1.75em;
 
-	transform: rotate(-3deg);
-
-	padding-bottom: .25em;
+	transform: rotate(-2deg);
+	
+	padding: 0;
 }
 
 audio{
@@ -664,7 +665,6 @@ audio{
 
 	width: 100%;	
 	height: 20px;
-
 }
 
 #dinoIcon{
