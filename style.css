@@ -179,6 +179,11 @@ div.dflexColumn{
 	align-items: center; 
 }
 
+div.flexWrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 div.invertColors{
 	background-color: var(--lightblue);
 
@@ -645,6 +650,18 @@ div.sliderContainer>*{
 	padding: 1rem;
 }
 
+#footer p.cursive{
+	font-size: 1.5em;
+}
+
+audio{
+	display: block;
+
+	width: 100%;	
+	height: 20px;
+
+}
+
 #dinoIcon{
 	position: absolute;
 	bottom: 0;
@@ -653,7 +670,8 @@ div.sliderContainer>*{
 	height: 75px;
 	width: 75px;
 
-	margin: .5rem;
+	margin: 1rem;
+	margin-bottom: 40px;
 
 }
 
