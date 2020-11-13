@@ -650,8 +650,13 @@ div.sliderContainer>*{
 	padding: 1rem;
 }
 
-#footer p.cursive{
-	font-size: 1.5em;
+p.exitMusic{
+	color: var(--orange);
+	font-size: 2em;
+
+	transform: rotate(-3deg);
+
+	padding-bottom: .25em;
 }
 
 audio{
