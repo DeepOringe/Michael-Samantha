@@ -85,21 +85,11 @@ a{
 	text-decoration: none;
 }
 
-a.button{
-	display: inline-block;     
-	position: relative;    
-	z-index: 3;     
-	padding: 2em;     
-	margin: -2em;
-	
-	margin-top: 1em;
-
-	box-shadow: var(--standard-box-shadow);
-}
-
 a:hover{
 	color: var(--orange);
 }
+
+
 
 /* a:visited{
 	color: var(--spacecadet);
@@ -523,6 +513,20 @@ div.polaroidPhoto.seventhPhoto{
 
 	/* animation: side-to-side 2s none 0s infinite;
 	animation-direction: reverse; */
+} 
+
+div.polaroidPhoto.tenthPhoto{
+	background: url(images/samsFamily.jpg); /*sets main photo and fallback if animation fails*/
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+
+div.polaroidPhoto.eleventhPhoto{
+	background: url(images/mikesFamily.jpg); /*sets main photo and fallback if animation fails*/
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
 } 
 
 
