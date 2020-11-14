@@ -126,7 +126,7 @@ li:before{
 	text-align: center;
 }
 
-p.orange{
+.orangeText{
 	color: var(--orange);
 }
 p.small{
