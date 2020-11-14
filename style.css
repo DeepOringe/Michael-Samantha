@@ -45,8 +45,8 @@ h1{
 
 h2{
 	color: rgba(255, 255, 255, .9);
-	font-size: 2.5em;
-	font-size: calc(2.5em +3vw);
+	font-size: 2em;
+	font-size: calc(2.5em +2vw);
 	font-weight: 600;
 	line-height: 1.2;
 }
@@ -81,8 +81,11 @@ h1, h2, h3, h4, h5, p, a{
 }
 
 a{
+	color: inherit;
 	text-decoration: none;
- 
+}
+
+a.button{
 	display: inline-block;     
 	position: relative;    
 	z-index: 3;     
@@ -172,7 +175,7 @@ div.flex800{
 	flex: 0 1 800px;
 }
 
-div.dflexColumn{
+.dflexColumn{
 	/*single column layout*/  
 	display: flex;
 	flex-direction: column;
