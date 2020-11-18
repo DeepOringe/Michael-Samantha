@@ -89,12 +89,6 @@ a:hover{
 	color: var(--orange);
 }
 
-
-
-/* a:visited{
-	color: var(--spacecadet);
-} */
-
 li{
 	position: relative;
 	padding-left: 2rem;
@@ -123,7 +117,6 @@ li:before{
 
 .blueText{
 	color: var(--lightblue);
-	text-align: center;
 }
 
 .orangeText{
@@ -132,6 +125,12 @@ li:before{
 p.small{
 	font-size: 1rem;
 	font-weight: 300;
+}
+a.button{
+	display: inline-block;     
+	position: relative;    
+	z-index: 3;
+	box-shadow: var(--standard-box-shadow);
 }
 
 
