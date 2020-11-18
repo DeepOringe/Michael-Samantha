@@ -660,13 +660,13 @@ div.sliderContainer>*{
 	padding: 1rem;
 }
 
-
-audio{
-	display: block;
-
-	width: 100%;	
-	height: 20px;
+p.exitMusic{
+	font-size: 1.5em;
+	line-height: 1;
+	text-align: bottom;
+	padding: 0;
 }
+
 
 #dinoIcon{
 	position: absolute;
@@ -677,6 +677,12 @@ audio{
 	width: 75px;
 }
 
+audio{
+	display: block;
+
+	width: 100%;	
+	height: 20px;
+}
 
 
 /* Animations */
