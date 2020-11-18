@@ -274,6 +274,10 @@ h1.tagline{
 	padding: 5rem 0 2rem 0;
 }
 
+#overview h2{
+	text-align: center;
+}
+
 
 div.skewContainer{
 	/*Well.... this is what I'm doing to prvent overflow-x, since I can't combine overflow-y:visible and overflow-x:hidden.*/
@@ -677,6 +681,7 @@ p.exitMusic{
 }
 
 audio{
+	border-radius: 1px;
 	display: block;
 
 	width: 100%;	
