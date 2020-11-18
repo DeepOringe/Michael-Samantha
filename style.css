@@ -113,6 +113,7 @@ li:before{
 
 .cursive{
 	font-family: 'Sacramento', cursive;
+	font-size: 1.5em;
 }
 
 .blueText{
@@ -661,10 +662,8 @@ div.sliderContainer>*{
 }
 
 p.exitMusic{
-	font-size: 1.5em;
-	line-height: 1;
-	text-align: bottom;
 	padding: 0;
+	line-height: .75;
 }
 
 
