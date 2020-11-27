@@ -680,6 +680,13 @@ p.exitMusic{
 	width: 75px;
 }
 
+
+div.audioContainer{
+	width: 100%;
+	height: 20px;
+	background: var(--spacecadet);
+}
+
 audio{
 	border-radius: 1px;
 	display: block;
