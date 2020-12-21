@@ -132,6 +132,9 @@ a.button{
 	z-index: 3;
 	box-shadow: var(--standard-box-shadow);
 }
+.text-center{
+	text-align: center;
+}
 
 
 
