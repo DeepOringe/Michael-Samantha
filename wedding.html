@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Michael + Samantha | Got married!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Michael and Samantha got married! Here's the scoop." />
+	<meta name="author" content="Samantha Siefert">
+</head>
+<style>
+	.greenText{
+		color: var(--green);
+	}
+
+	html{
+		background-color: var(--ivory);
+	}
+
+	div.invertColors{
+		background-color: var(--green);
+	}
+
+	.insetColors{
+	color: white;
+	background-color: var(--green);
+	}
+
+	p.textPhoto{
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+		height: 100%;
+		width: 100%;
+
+		padding: 1rem;
+		line-height: 2;
+	}
+
+	@media all and (max-width: 400px){
+		p.textPhoto{
+			padding: .2rem;
+			line-height: 1.5;
+		
+	}
+}
+
+
+	#footer{
+		background-color: var(--green);
+	}
+
+	p>a{
+		text-decoration: 5px solid underline;
+	}
+
+	button.toggle{
+		color: var(--ivory);
+		background: var(--orange); 
+		box-shadow: var(--standard-box-shadow);
+		border: 1px solid var(--orange);
+		border-radius: 50%;
+		height: 1.5rem;
+		width: 1.5rem;
+		margin: 0 .75rem 0 .75rem;
+	}
+
+	#banner2{
+		position: relative;
+
+		width: 100%;
+		height: 100vh;	
+
+		background:  
+		linear-gradient(
+			160deg,
+			rgba(0, 0, 0, .7),
+			rgba(0, 0, 0, .6),
+			rgba(0, 0, 0, 0) 50%),
+			url(images/wedding/banner1.jpg);
+
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#banner2 div.skewLeft{
+		position: absolute;
+		top: 20vh;
+		left: 0;
+
+	}
+
+	h1.animate-write-text{
+		background: linear-gradient(to right, var(--ivory) 50%, transparent 50%, transparent 100%);
+		background-clip: text;
+  		-webkit-background-clip: text;
+ 	 	-webkit-text-fill-color: transparent;
+  		background-size: 200% 100%;
+		background-position: top right;
+		  
+		animation-name: write-text;
+		animation-delay: 1s;
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;	 
+	}
+
+	@keyframes write-text{
+
+	0%{
+		background-position: top right;
+	}
+	100%{
+		background-position: top left;
+	}
+ 
+	}
+
+div.overview{
+	border-top: var(--thick-border);
+}
+
+div.audioContainer{
+		background-color: var(--green);
+	}
+
+/* Adds the box shadow to img, !important to overwride setting it on the background url for the engagement page images*/
+.polaroidPhoto::after{
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	box-shadow: inset 0 0 5px orange;
+	z-index: 950;
+	pointer-events: none;
+} 
+
+/* Attempt slideshow */
+div.carousel-wrapper{
+	overflow: hidden; 
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+
+	position: relative;	
+}
+
+div.carousel{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel__photo, .carousel2__photo {
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	/* left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);  */
+
+	opacity: 0;
+	
+	z-index: 100;
+	
+	transition: transform .5s, opacity .5s, z-index .5s; 
+}
+
+.carousel__photo.initial,
+.carousel__photo.active,
+
+.carousel2__photo.initial,
+.carousel2__photo.active {
+  opacity: 1;
+  z-index: -100;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next,
+
+.carousel2__photo.prev,
+.carousel2__photo.next {
+  z-index: -200;
+}
+
+.carousel__photo.prev,
+.carousel2__photo.prev {
+  transform: translateX(-100%);  /*Move 'prev' item to the left*/ 
+}
+.carousel__photo.next
+.carousel2__photo.next {
+  transform: translateX(100%);  /*Move 'next' item to the right */
+}
+
+</style>
+
+
+<body>
+	<div id="banner2" class="flexColumn">
+		<div class="skewLeft">
+			<h1 style="margin-left: -1em" class="ivoryText">Yahoo!</h1> 
+			<h1 class="cursive animate-write-text">We got married!</h1>	
+		</div>
+			
+	</div>
+
+	<div id="overview" class="flex100 flexColumn overview">
+		<h1 class="greenText">Michael + Samantha<br>21 December 2020</h1>
+		<h2  class="greenText cursive">"The longest night of the year..."<br>-Bob and Betty Winchester</h2>
+		<!-- <h2  class="greenText cursive">That's right; we did it!</h2> -->
+	</div>
+
+	<div id="gotmarried" class="flex800 flexColumn invertColors">
+		<h1>We got married!</h1>
+
+		<p>On December 21, 2020, at approximately 2:00pm--date as planned, location improvised!--we officially tied the knot on the grounds of the Austin Capitol.</p>
+		
+		<p>The weather was fine and the day began with flowers, donuts, tacos, and FaceTimes. Judge Jan Breland was kind enough to meet us at the Capitol to officiate, and just as she pronounced the marriage the Texas state Christmas tree lit up and Gene Autry sang "Merry Texas Christmas You All," just for us. We were very happy, thinking of each other and of all of you. After the ceremony we walked our favorite trail around Town Lake, past the dog park where this wild notion of marriage began. We stopped at Uncle Nicky's for dinner, with Italian wedding cookies and tiny pies for dessert.</p>
+
+		<p>Your notes of wisdom have been so much fun to read, and we are so grateful for your love and support at this time in our lives. Thank you!</p>
+
+		<h3>With love,</h3>
+		<h3 class="cursive">-Michael + Samantha</h3>
+	</div>
+
+	<div id="weddinggallery" class="flex100 flexColumn skewContainer">
+		
+		<!--photo slideshow WEDDING-->
+		
+		<div class="polaroidContainer">
+			<div class="polaroidPhoto carousel-wrapper">
+				<div class="carousel">
+					
+					<div class="carousel__photo initial" style="background: url(images/wedding/1.jpeg); background-size: cover; background-position: 70% 0%;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/2.jpeg); background-size: cover; background-position: top right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/3.jpeg); background-size: cover; background-position: bottom right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/4.jpeg); background-size: cover; background-position: bottom right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/5.jpeg); background-size: cover; background-position: center center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/6.jpg); background-size: cover; background-position: center center;"></div> -->
+					<div class="carousel__photo" style="background: url(images/wedding/7.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/8.JPG); background-size: cover; background-position: center right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/9.JPG); background-size: cover; background-position: center right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/10.jpeg); background-size: cover; background-position: bottom center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/11.jpeg); background-size: cover; background-position: bottom center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/12.JPG); background-size: cover; background-position: bottom center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/13.jpeg); background-size: cover; background-position: bottom right;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/14.jpg); background-size: cover; background-position: bottom center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/15.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/16.JPEG); background-size: cover; background-position: center right;"></div>
+
+					<div class="carousel__photo" style="background: url(images/wedding/19.JPEG); background-size: cover; background-position: center center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/19-gif.gif); background-size: cover; background-position: center center;"></div> -->
+
+					<div class="carousel__photo" style="background: url(images/wedding/20.JPEG); background-size: cover; background-position: bottom center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/20-gif.gif); background-size: cover; background-position: bottom center;"></div> -->
+
+					<div class="carousel__photo" style="background: url(images/wedding/17.JPEG); background-size: cover; background-position: bottom right;"></div>
+					
+					<div class="carousel__photo" style="background: url(images/wedding/18.JPEG); background-size: cover; background-position: center center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/18-gif.gif); background-size: cover; background-position: center center;"></div> -->
+					
+					<div class="carousel__photo" style="background: url(images/wedding/21.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/21a.JPEG); background-size: cover; background-position: left center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/21-gif.gif); background-size: cover; background-position: center center;"></div> -->
+
+					<div class="carousel__photo" style="background: url(images/wedding/22.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/23.JPEG); background-size: cover; background-position: top center;"></div>
+
+					<div class="carousel__photo" style="background: url(images/wedding/24.JPEG); background-size: cover; background-position: center center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/24-gif.gif); background-size: cover; background-position: top center;"></div> -->
+					
+					<div class="carousel__photo" style="background: url(images/wedding/25.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel__photo" style="background: url(images/wedding/26.jpg); background-size: cover; background-position: center center;"></div>
+
+					<div class="carousel__photo" style="background: url(images/wedding/27.JPEG); background-size: cover; background-position: top center;"></div>
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/27-gif.gif); background-size: cover; background-position: bottom left;"></div> -->
+					<!-- <div class="carousel__photo" style="background: url(images/wedding/gifs/27-gifgif.gif); background-size: cover; background-position: bottom center;"></div> -->
+
+					<div class="carousel__photo" style="background: url(images/wedding/28.JPEG); background-size: cover; background-position: bottom center;"></div>
+
+				</div>
+
+			</div>
+			<p class="label"><button class="toggle carousel__button_prev"> << </button>Check out the photos!<button class="toggle carousel__button_next"> >> </button></p>
+		</div>
+		
+		<!-- end slideshow -->
+
+	</div>
+
+	<div id="jennysway" class="flex800 flexColumn invertColors">
+			<h1>We built<br>Jennifer's Way!</h1>
+			<p>The Jennifer Flynn Memorial Path could not be more beautiful, and it would not have been possible without your support. We thank you.</p>
+			<p>We owe special gratitude to Rebecca and Teddy Brown who direct Franklinton Farms and made this project come to life. Craig Arledge of <a href="https://www.arledgeconstruction.com/" target="_blank">Arledge Construction</a> and Ben Bekett of <a href="http://www.beckettforge.com/" target="_blank">Beckett Forge</a> shared their expert craftsmanship to build the path, and we could not be more impressed. <a href="http://www.disabilityempowerment.net/" target="_blank">The Center for Disability Empowerment</a> offered consulting services to make the path accessible, and generous donations from the Covenant Presbyterian Women and the Ingram Whitecastle Foundation made this project possible.</p>
+			<p>It feels like it was meant to be that the concrete was poured one year to the day after Jennifer's funeral. Today, Jennifer's Way makes the Franklinton Farms Learning Garden accessible to everyone who chooses to visit. There is a community shelter, a path to pick blackberries, and even a sit-down garden--one of the projects that Jenny championed during her time as an Americorps Vista at the Farms. Aunt Jenny would have loved it. Being able to walk the path, together with family again, has made us so grateful that we chose to begin our marriage this way.</p>
+			<p>We cannot thank you enough for your individual support: for donations, for spreading the word, and for visiting the gardens. We are so happy to share that future donations to Franklinton Farms will include the option to be dedicated to the "Jennifer Flynn Accessibility Fund," which will earmark the funds to go towards accessibility projects when possible.</p>
+			<a id="jennyswayLink" class="insetColors button" target="_blank" href="https://franklintonfarms.org/jennysway" target="_blank">The Jennifer Flynn Accessibility Fund</a>
+	</div>
+	
+	<div id="jennyswaygallery" class="flex100 flexColumn skewContainer">
+	
+		<!--photo slideshow JENNY'S WAY-->
+		
+		<div class="polaroidContainer">
+			<div class="polaroidPhoto carousel-wrapper">
+				<div class="carousel">
+					
+					<div class="carousel2__photo initial" style="background: url(images/jennysway/1.jpeg); background-size: cover; background-position: center center;"></div>
+					
+					<div class="carousel2__photo" style="background: linear-gradient(to bottom right, rgba(54, 52, 87, .7), rgba(54, 52, 87, 1)), url(images/jennysway/2.jpg); background-size: cover; background-position: center center;">
+						<p class="textPhoto">“Whatever I pick to do I put my heart into it with passion, and creative ways of doing things is how I keep going. I accept my challenges and defeats, but I continue to pick up and start again. That's how I roll."<br><br>-Jennifer Flynn, 21 December 2013</p>
+					</div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/2.jpg); background-size: cover; background-position: center center;"></div>
+					
+					<div class="carousel2__photo" style="background: url(images/jennysway/3.jpg); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/4.jpg); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/4a.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/5.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/6.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/7.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/8.jpg); background-size: cover; background-position: top center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/9.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/10.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/11.JPG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/12.JPEG); background-size: cover; background-position: center center;"></div>
+
+					<!-- <div class="carousel2__photo" style="background: url(images/jennysway/13.JPEG); background-size: cover; background-position: center center;"></div> -->
+					<div class="carousel2__photo" style="background: url(images/jennysway/gifs/13-gif.gif); background-size: cover; background-position: center center;"></div>
+					
+					<div class="carousel2__photo" style="background: url(images/jennysway/14.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/15.jpeg); background-size: cover; background-position: 40% 50%;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/16.JPEG); background-size: cover; background-position: top center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/17.jpg); background-size: cover; background-position: center center;"></div>
+
+					<!-- <div class="carousel2__photo" style="background: url(images/jennysway/18.JPEG); background-size: cover; background-position: center center;"></div> -->
+					<div class="carousel2__photo" style="background: url(images/jennysway/gifs/18-gif.gif); background-size: cover; background-position: center center;"></div>
+
+					<div class="carousel2__photo" style="background: url(images/jennysway/19.JPEG); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/20a.jpg); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/21.jpg); background-size: cover; background-position: center center;"></div>		
+					<div class="carousel2__photo" style="background: url(images/jennysway/22.jpg); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/23foot.jpg); background-size: cover; background-position: center center;"></div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/24.jpg); background-size: cover; background-position: 50% 20%;"></div>
+					
+					<div class="carousel2__photo" style="background: linear-gradient(to bottom right, rgba(54, 52, 87, .7), rgba(54, 52, 87, 1)), url(images/jennysway/26.JPG); background-size: cover; background-position: bottom left;">
+						<p class="textPhoto">“Advocacy is my passion. I'm driven to try to improve the barriers people face. I have wonderful friends who inspired me to always try. Many before me, I thank them.”<br><br>-Jennifer Flynn, 22 August 2013</p>
+					</div>
+					<div class="carousel2__photo" style="background: url(images/jennysway/26a.JPG); background-size: cover; background-position: bottom left;"></div>
+
+					<div class="carousel2__photo" style="background: url(images/jennysway/27.jpg); background-size: cover; background-position: top left;"></div>
+
+				</div>
+
+			</div>
+			<p class="label"><button class="toggle carousel2__button_prev"> << </button>More photos!<button class="toggle carousel2__button_next"> >> </button></p>
+		</div>
+		
+		<!-- end slideshow -->
+
+	</div>
+	<div id="overview" class="flex100 flexColumn">
+		<h1 class="greenText">Thank you!</h1>
+		<h2  class="greenText cursive">We couldn't have done it without you.</h2>
+	</div>
+	<div id="footer" class="flex100">
+		<h2 class="">Come again soon.</h2>
+		<div>
+			<p>We will keep updating this website, so you never know what you might find!</p>
+			<p>Miss the engagement website? Don't worry, <a href="https://unexpectedly.xyz/engagement">it's still here.</a></p>
+			<p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+			<p>sam.siefert@gmail.com</p>
+		</div>
+
+		<p class="cursive exitMusic">exit music*</p>
+		
+		<img id="dinoIcon" src="images/dinoIcon.png"> 
+
+	</div>
+	<div class="audioContainer">
+		<audio controls>
+			<source src="audio/PompandCircumstance.mp3" type="audio/mpeg">
+		</audio>
+	</div>	
+
+</body>
+
+</html>
+
+
+<script>
+
+//https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9//
+
+//FIRST SLIDER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+!(function(d){
+  // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
+  var itemClassName = "carousel__photo";
+      items = d.getElementsByClassName(itemClassName),
+      totalItems = items.length,
+      slide = 0,
+      moving = true; 
+
+  // To initialise the carousel we'll want to update the DOM with our own classes
+  function setInitialClasses() {
+
+    // Target the last, initial, and next items and give them the relevant class.
+    // This assumes there are three or more items.
+    items[totalItems - 1].classList.add("prev");
+    items[0].classList.add("active");
+    items[1].classList.add("next");
+  }
+
+  // Set click events to navigation buttons
+
+  function setEventListeners() {
+    var next = d.getElementsByClassName("carousel__button_next")[0],
+        prev = d.getElementsByClassName("carousel__button_prev")[0];
+
+    next.addEventListener('click', moveNext);
+    prev.addEventListener('click', movePrev);
+  }
+
+  // Disable interaction by setting 'moving' to true for the same duration as our transition (0.5s = 500ms)
+  function disableInteraction() {
+    moving = true;
+
+    setTimeout(function(){
+      moving = false
+    }, 500);
+  }
+
+  function moveCarouselTo(slide) {
+
+    // Check if carousel is moving, if not, allow interaction
+    if(!moving) {
+
+      // temporarily disable interactivity
+      disableInteraction();
+
+      // Preemptively set variables for the current next and previous slide, as well as the potential next or previous slide.
+      var newPrevious = slide - 1,
+          newNext = slide + 1,
+          oldPrevious = slide - 2,
+          oldNext = slide + 2;
+
+      // Test if carousel has more than three items
+      if ((totalItems - 1) > 3) {
+
+        // Checks if the new potential slide is out of bounds and sets slide numbers
+        if (newPrevious <= 0) {
+          oldPrevious = (totalItems - 1);
+        } else if (newNext >= (totalItems - 1)){
+          oldNext = 0;
+        }
+
+        // Check if current slide is at the beginning or end and sets slide numbers
+        if (slide === 0) {
+          newPrevious = (totalItems - 1);
+          oldPrevious = (totalItems - 2);
+          oldNext = (slide + 1);
+        } else if (slide === (totalItems -1)) {
+          newPrevious = (slide - 1);
+          newNext = 0;
+          oldNext = 1;
+        }
+
+        // Now we've worked out where we are and where we're going, by adding and removing classes, we'll be triggering the carousel's transitions.
+
+        // Based on the current slide, reset to default classes.
+        items[oldPrevious].className = itemClassName;
+        items[oldNext].className = itemClassName;
+
+        // Add the new classes
+        items[newPrevious].className = itemClassName + " prev";
+        items[slide].className = itemClassName + " active";
+        items[newNext].className = itemClassName + " next";
+      }
+    }
+  }
+
+  // Next navigation handler
+  function moveNext() {
+
+    // Check if moving
+    if (!moving) {
+
+      // If it's the last slide, reset to 0, else +1
+      if (slide === (totalItems - 1)) {
+        slide = 0;
+      } else {
+        slide++;
+      }
+
+      // Move carousel to updated slide
+      moveCarouselTo(slide);
+    }
+  }
+
+  // Previous navigation handler
+  function movePrev() {
+
+    // Check if moving
+    if (!moving) {
+
+      // If it's the first slide, set as the last slide, else -1
+      if (slide === 0) {
+        slide = (totalItems - 1);
+      } else {
+        slide--;
+      }
+
+      // Move carousel to updated slide
+      moveCarouselTo(slide);
+    }
+  }
+
+  // Initialise carousel
+  function initCarousel() {
+    setInitialClasses();
+    setEventListeners();
+
+    // Set moving to false now that the carousel is ready
+    moving = false;
+  }
+
+  // make it rain
+  initCarousel();
+
+}(document));
+
+//AGAIN, BUT2 NEXT2 SLIDER2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!(function(d){
+  // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
+  var itemClassName2 = "carousel2__photo";
+      items2 = d.getElementsByClassName(itemClassName2),
+      totalItems2 = items2.length,
+      slide2 = 0,
+      moving2 = true; 
+
+  // To initialise the carousel we'll want to update the DOM with our own classes
+  function setInitialClasses2() {
+
+    // Target the last, initial, and next items and give them the relevant class.
+    // This assumes there are three or more items.
+    items2[totalItems2 - 1].classList.add("prev");
+    items2[0].classList.add("active");
+    items2[1].classList.add("next");
+  }
+
+  // Set click events to navigation buttons
+
+  function setEventListeners2() {
+    var next2 = d.getElementsByClassName("carousel2__button_next")[0],
+        prev2 = d.getElementsByClassName("carousel2__button_prev")[0];
+
+	next2.addEventListener('click', moveNext2);
+    prev2.addEventListener('click', movePrev2);
+  }
+
+  // Disable interaction by setting 'moving' to true for the same duration as our transition (0.5s = 500ms)
+  function disableInteraction2() {
+    moving2 = true;
+
+    setTimeout(function(){
+      moving2 = false
+    }, 500);
+  }
+
+  function moveCarouselTo2(slide2) {
+
+    // Check if carousel is moving, if not, allow interaction
+    if(!moving2) {
+
+      // temporarily disable interactivity
+      disableInteraction2();
+
+      // Preemptively set variables for the current next and previous slide, as well as the potential next or previous slide.
+      var newPrevious2 = slide2 - 1,
+          newNext2 = slide2 + 1,
+          oldPrevious2 = slide2 - 2,
+          oldNext2 = slide2 + 2;
+
+      // Test if carousel has more than three items
+      if ((totalItems2 - 1) > 3) {
+
+
+        // Checks if the new potential slide is out of bounds and sets slide numbers
+        if (newPrevious2 <= 0) {
+          oldPrevious2 = (totalItems2 - 1);
+        } else if (newNext2 >= (totalItems2 - 1)){
+          oldNext2 = 0;
+        }
+
+        // Check if current slide is at the beginning or end and sets slide numbers
+        if (slide2 === 0) {
+          newPrevious2 = (totalItems2 - 1);
+          oldPrevious2 = (totalItems2 - 2);
+          oldNext2 = (slide2 + 1);
+        } else if (slide2 === (totalItems2 - 1)) {
+          newPrevious2 = (slide2 - 1);
+          newNext2 = 0;
+          oldNext2 = 1;
+        }
+
+        // Now we've worked out where we are and where we're going, by adding and removing classes, we'll be triggering the carousel's transitions.
+
+		// Based on the current slide, reset to default classes.
+		items2[oldPrevious2].className = itemClassName2;
+		console.log(oldNext2)
+		console.log( items2[oldNext2])
+        items2[oldNext2].className = itemClassName2;
+
+        // Add the new classes
+        items2[newPrevious2].className = itemClassName2 + " prev";
+        items2[slide2].className = itemClassName2 + " active";
+        items2[newNext2].className = itemClassName2 + " next";
+      }
+    }
+  }
+
+  // Next navigation handler
+  function moveNext2() {
+
+    // Check if moving
+    if (!moving2) {
+      // If it's the last slide, reset to 0, else +1
+      if (slide2 === (totalItems2 - 1)) {
+        slide2 = 0;
+      } else {
+        slide2++;
+      }
+
+      // Move carousel to updated slide
+      moveCarouselTo2(slide2);
+    }
+  }
+
+  // Previous navigation handler
+  function movePrev2() {
+
+    // Check if moving
+    if (!moving2) {
+
+      // If it's the first slide, set as the last slide, else -1
+      if (slide2 === 0) {
+        slide2 = (totalItems2 - 1);
+      } else {
+        slide2--;
+      }
+
+      // Move carousel to updated slide
+      moveCarouselTo2(slide2);
+    }
+  }
+
+  // Initialise carousel
+  function initCarousel2() {
+    setInitialClasses2();
+    setEventListeners2();
+
+    // Set moving to false now that the carousel is ready
+    moving2 = false;
+  }
+
+  // make it rain
+  initCarousel2();
+
+}(document));
+
+// I am not proud of this Javascript... but it was educational, errrr educational2.
+</script>
+
+
+
+<!-- <script type="module">
+	import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+	confetti();
+</script> -->
+
+
+
+
+
+
+
+
+
+
