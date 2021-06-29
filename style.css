@@ -23,6 +23,9 @@
 	--standard-emphasis: hsl(0, 0, 15%);
 	--standard-border: 10px solid var(--orange);
 	--thick-border: 20px solid var(--orange);
+	
+
+
 }
 
 *{
