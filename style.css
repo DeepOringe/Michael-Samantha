@@ -234,7 +234,7 @@ div.invertColors p{
 	width: 100%;
 	height: 100vh;	
 
-	background: url(images/dino2_new.jpg);
+	background: url(images/engagement/dino2_new.jpg);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -244,7 +244,7 @@ div.invertColors p{
 	position: absolute;
 
 	content: "";
-	background-image: url(images/dino1_new.jpg);
+	background-image: url(images/engagement/dino1_new.jpg);
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -373,7 +373,7 @@ p.label{
 }
 
 div.polaroidPhoto.firstPhoto{
-	background: url(images/niceA.JPG); /*sets main photo and fallback if animation fails*/
+	background: url(images/engagement/niceA.JPG); /*sets main photo and fallback if animation fails*/
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -381,7 +381,7 @@ div.polaroidPhoto.firstPhoto{
 
 div.polaroidPhoto.firstPhoto:before{    
 	content: "";
-	background-image: url(images/niceB.JPG);
+	background-image: url(images/engagement/niceB.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -396,7 +396,7 @@ div.polaroidPhoto.firstPhoto:before{
 }
 
 div.polaroidPhoto.secondPhoto{
-	background: url(images/jump1.JPG);
+	background: url(images/engagement/jump1.JPG);
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -405,7 +405,7 @@ div.polaroidPhoto.secondPhoto{
 
 div.polaroidPhoto.secondPhoto:before{    
 	content: "";
-	background-image: url(images/jump2.JPG);
+	background-image: url(images/engagement/jump2.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -421,7 +421,7 @@ div.polaroidPhoto.secondPhoto:before{
 
 div.polaroidPhoto.secondPhoto:after{    
 	content: "";
-	background-image: url(images/jump3.JPG);
+	background-image: url(images/engagement/jump3.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -437,7 +437,7 @@ div.polaroidPhoto.secondPhoto:after{
 
 div.polaroidPhoto.secondPhoto span.animation_placeholder:before{    
 	content: "";
-	background-image: url(images/jump4.JPG);
+	background-image: url(images/engagement/jump4.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -454,7 +454,7 @@ div.polaroidPhoto.secondPhoto span.animation_placeholder:before{
 
 div.polaroidPhoto.secondPhoto span.animation_placeholder:after{    
 	content: "";
-	background-image: url(images/jump5.JPG);
+	background-image: url(images/engagement/jump5.JPG);
 	background-position: bottom left;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -470,7 +470,7 @@ div.polaroidPhoto.secondPhoto span.animation_placeholder:after{
 }
 
 div.polaroidPhoto.thirdPhoto{
-	background: url(images/zenA.JPG);
+	background: url(images/engagement/zenA.JPG);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -478,7 +478,7 @@ div.polaroidPhoto.thirdPhoto{
 
 div.polaroidPhoto.thirdPhoto:before{    
 	content: "";
-	background-image: url(images/zenB.JPG);
+	background-image: url(images/engagement/zenB.JPG);
 	background-position: top center;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -493,7 +493,7 @@ div.polaroidPhoto.thirdPhoto:before{
 }
 
 div.polaroidPhoto.fourthPhoto{
-	background: url(images/dino3.JPG);
+	background: url(images/engagement/dino3.JPG);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -501,7 +501,7 @@ div.polaroidPhoto.fourthPhoto{
 
 div.polaroidPhoto.fourthPhoto:before{    
 	content: "";
-	background-image: url(images/dino4.JPG);
+	background-image: url(images/engagement/dino4.JPG);
 	background-position: top center;
 	background-repeat: repeat-x;
 	background-size: cover;
@@ -516,7 +516,7 @@ div.polaroidPhoto.fourthPhoto:before{
 }
 
 div.polaroidPhoto.sixthPhoto{
-	background: url(images/kickSam.JPG);
+	background: url(images/engagement/kickSam.JPG);
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -525,7 +525,7 @@ div.polaroidPhoto.sixthPhoto{
 } 
 
 div.polaroidPhoto.seventhPhoto{
-	background: url(images/kickMike.JPG);
+	background: url(images/engagement/kickMike.JPG);
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -535,14 +535,14 @@ div.polaroidPhoto.seventhPhoto{
 } 
 
 div.polaroidPhoto.tenthPhoto{
-	background: url(images/samsFamily.jpg); /*sets main photo and fallback if animation fails*/
+	background: url(images/engagement/samsFamily.jpg); /*sets main photo and fallback if animation fails*/
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: cover;
 } 
 
 div.polaroidPhoto.eleventhPhoto{
-	background: url(images/mikesFamily.jpg); /*sets main photo and fallback if animation fails*/
+	background: url(images/engagement/mikesFamily.jpg); /*sets main photo and fallback if animation fails*/
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: cover;
