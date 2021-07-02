@@ -97,6 +97,7 @@ a{
 }
 
 p>a, li>a{
+	text-decoration: underline; /* mobile fallback */
 	text-decoration: 3px solid underline;
 }
 
