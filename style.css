@@ -96,8 +96,8 @@ a{
 	text-decoration: none;
 }
 
-p>a{
-	text-decoration: underline;
+p>a, li>a{
+	text-decoration: 3px solid underline;
 }
 
 a:hover{
@@ -106,10 +106,13 @@ a:hover{
 
 li{
 	position: relative;
-	padding-left: 2rem;
+	padding-left: 1rem;
 
 	line-height: 1.6;
 	margin-bottom: 1rem;
+
+	color: rgba(255, 255, 255, .8);
+	color: hsl(0, 0, 37%);
 }
 
 li:before{
