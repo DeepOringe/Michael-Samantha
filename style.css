@@ -3,20 +3,22 @@
 :root{
 	font-size: 18px;
 
-	/* Root variables */
+	/* Engagement colors */
 	--spacecadet: rgba(54, 52, 87, 1);
 	--lightblue: rgba(110, 152, 190, 1);
 	--lightestblue: rgba(130, 165, 196, 1);
 	--lightestlight: rgba(249, 250, 252, 1);
 	--orange: rgba(246, 115, 71, 1);
 
-	/*Wedding colors */
+	/* Wedding colors */
 	--ivory: rgb(250, 250, 234);
 	--green: rgb(49, 64, 41);
 	--lightgreen: rgba(250, 250, 234, .3);
 
+	/* 404 colors */
+	--PByellow: rgba(226, 217, 154);
 
-
+	/* Root variables */
 	--standard-box-shadow: 0px 2px 4px rgba(0, 0, 0, .18);
 	--standard-box-shadow: 2px 2px 5px rgba(1,1,1,.35);
 	--extra-box-shadow: 3px 3px 7px rgba(1,1,1,.35);
@@ -24,8 +26,6 @@
 	--standard-border: 10px solid var(--orange);
 	--thick-border: 20px solid var(--orange);
 	
-
-
 }
 
 *{
