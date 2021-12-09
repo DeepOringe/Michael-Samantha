@@ -5,6 +5,7 @@
 
 	/* Engagement colors */
 	--spacecadet: rgba(54, 52, 87, 1);
+	--spacecadetTrans:  rgba(54, 52, 87, .5);
 	--lightblue: rgba(110, 152, 190, 1);
 	--lightestblue: rgba(130, 165, 196, 1);
 	--lightestlight: rgba(249, 250, 252, 1);
