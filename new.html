@@ -22,52 +22,119 @@
 	<meta name="author" content="Samantha Siefert">
 </head>
 <style>
-    html{
-        background: var(--spacecadet);
+
+    html{ 
+        min-height: 100vw;
+        min-width: 100%;
+        background: #f7f9fc; /*color from christmascard*/
     }
 
-    div.banner{
+    body{
+        height: 100%;
+        width: 100%;    
+    }
+
+    h1, h2, h3{
+        color: var(--spacecadet);
+    }
+
+    div.flex{
+        display: flex;
+    }
+
+    .expand{
+        letter-spacing: .5rem;
+    }
+
+    #banner-brennans{
+        height: 100%;
         width: 100%;
-        height: 100vh;
+
+        background: var(--orange);
+        border-bottom: 20px solid white;
+
+        padding: 1em 1em 0 0;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
-    div.inline{
-        display: flex
+    @media all and (min-width: 600px){
+        #banner-brennans{
+            padding: 3em 1em 0 0;
+            justify-content: center;
+        }
+
     }
-  
+
+    #banner-brennans h1, h2{
+        color: white;
+        padding: 0;
+        line-height: 1;
+    }
+
+/* TO GO TO MAIN CSS */
+/* GRID OF PHOTOS */
+
+
+    div.grid-photo-gallery{
+    width: 100%;
+    
+    border-top: 10px solid white;
+
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-auto-rows: 100vw;
+	grid-gap: 10px;
+    }
+
+    div.grid-photo{
+            height: 100%;
+            width: 100%;
+    }
+
+
+    /* ANIMATIONS */
+
+    div.animate-background{
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        animation: alternate_background 2s none 1s infinite;
+    }
 
     .wobble{
-        padding: 1rem;
-
-        animation-name: wobble;
-        animation-iteration-count: infinite;
-        animation-duration: 20s;   
-
-        
+        /* -webkit-animation: 2s infinite alternate rotation;
+        -webkit-animation-timing-function: steps(5, end); */
+        animation: 2s infinite alternate rotation;
+        animation-timing-function: steps(5, end);
     }
-
-    @keyframes wobble {
-        0%{
+    
+    @keyframes rotation {
+        from {
             transform: rotate(0deg);
         }
-        25%{
-            transform: rotate(-.15turn);
-        }
-        50%{
-            transform: rotate(0deg);
-        }
-        75%{
-            transform: rotate(.15turn);
+        to {
+            transform: rotate(-10deg);
         }
     }
+
+
 
 </style>
+
 <body>
-    <div class="banner flexColumn flexCenter">
-        <div class="inline">
-            <h1 class="expand wobble">T</h1>
+    <div id="banner-brennans" class="">
+        
+        <!-- <div class="flex">
+            <h1 class="expand wobble">&nbsp;</h1>
+            <h1 class="expand wobble">t</h1>
             <h1 class="expand wobble">h</h1>
             <h1 class="expand wobble">e</h1>
+        </div> -->
+        <h2 class="cursive skewLeft">&nbsp;the&nbsp;</h2>
+        <div class="flex">
             <h1 class="expand wobble">&nbsp;</h1>
             <h1 class="expand wobble">B</h1>
             <h1 class="expand wobble">r</h1>
@@ -77,8 +144,101 @@
             <h1 class="expand wobble">a</h1>
             <h1 class="expand wobble">n</h1>
             <h1 class="expand wobble">s</h1>
-
-
         </div>
     </div>
+
+    <div>
+        <h1>2021 year in review</h1>
+    </div>
+
+    <div id="gallery" class="flex100 flexColumn skewContainer">
+        <div class="polaroidContainer skewLeft">
+            <div class="polaroidPhoto" style="background: url(images/2021/0_sunflower_happy.JPG); background-size: cover; background-position:top right;">
+                <div class="animate-background" style="background: url(images/2021/0_sunflower_sad.JPG); background-size: cover; background-position:top right;"></div>
+            </div>
+            <p class="label">It's been a pretty good year</p>
+        </div>
+    </div>
+    <div class="grid-photo-gallery">
+        <div class="grid-photo" style="background: url(images/2021/2_bread.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/4_bread.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/10_drawer.JPEG); background-size: cover; background-position:bottom center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/6_hambies.JPEG); background-size: cover; background-position:top left;"></div>
+        <div class="grid-photo" style="background: url(images/2021/8_breakfast.JPEG); background-size: cover; background-position:center centert;"></div>
+        <div class="grid-photo" style="background: url(images/2021/12_cars.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/14_macarons.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/16_michael_VID.gif); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/18_mikesbirthday.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/19_samsbirthday.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/20_snowstorm.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/22_michaelfire.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/24_samwood.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/26_cozybirds.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/28_bluebonnetsbrennans.jpg); background-size: cover; background-position:center left;"></div>
+        <div class="grid-photo" style="background: url(images/2021/30_kawikabluebonnets.JPG); background-size: cover; background-position:center center;"></div>
+        <!-- <div class="grid-photo" style="background: url(images/2021/32_bluebonnets_A.JPG); background-size: cover; background-position:top center;"></div> -->
+        <div class="grid-photo" style="background: url(images/2021/34_mischiefkawikaVID.gif); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/36_cliffjumping.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/38_butterhalf.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/40_walkinghenry.JPEG); background-size: cover; background-position:top center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/42_MeemaPapaVaccination.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/44_jennysway.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/56_famcircle.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/48_weddingreinactmentVID.gif); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/50_brennanfolders.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/52_juliemarried.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/54_julieweddinggroup.jpg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/58_meema.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/60_grandmajulie.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/62_jack.JPEG); background-size: cover; background-position:top center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/64_frankie+addie.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/66_rob+gillian.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/68_rob+gillian+aquarium.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/70_bigfam.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/72_meemapapasammimichael.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/74_swartzwelders.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/76_addie+frankie.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/78_earplants.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/80_giantfaces.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/82_paintingwgrandma.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/84_floridarobmichael.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/86_floridafamporch.JPG); background-size: cover; background-position:top center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/88_floridagroup_A.jpg); background-size: cover; background-position:top center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/90_somuch.jpeg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/92_sarah+stephanie.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/94_simi.jpg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/96_heywho+nathan.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/98_reunion.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo" style="background: url(images/2021/100_christmas.JPEG); background-size: cover; background-position:center center;"></div>
+
+
+    </div>
+
+
+
+
+    <div id="overview" class="flex100 flexColumn">
+		<h1 class="greenText">Happy 2022!</h1>
+		<h2  class="cursive">We wish you the best in the new year.</h2>
+	</div>
+	<div id="footer" class="flex100">
+		<h2 class="">Come again soon.</h2>
+		<div>
+			<p>We will keep updating this website, so you never know what you might find!</p>
+			<p>Miss the engagement website? Don't worry, <a href="https://unexpectedly.xyz/engagement">it's still here.</a></p>
+			<p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+			<p>sam.siefert@gmail.com</p>
+		</div>
+
+		<p class="cursive exitMusic">exit music</p>
+		
+		<img id="dinoIcon" src="images/dinoIcon.png"> 
+
+	</div>
+	<div class="audioContainer">
+		<audio controls>
+			<source src="audio/PompandCircumstance.mp3" type="audio/mpeg">
+		</audio>
+	</div>	
 </body>
+</html>
