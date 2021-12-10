@@ -89,6 +89,14 @@
         color: var(--orange);
     }
 
+    h3.photo-caption{
+        background:rgba(54, 52, 87, .7);
+        display: inline-block;
+        color: white;
+        padding: .25rem;
+        margin: 2rem;
+    }
+
 /* GRID OF PHOTOS */
 
     div.grid-photo-gallery{
@@ -117,9 +125,25 @@
             grid-column-start: span 2;
             grid-row-start: span 2;
         }
+
+        div.grid-photo-3wx1-5t{
+            grid-column-start: span 3;
+            grid-row-start: span 1.5;
+        }
+        
+        div.grid-photo-2w{
+            grid-column-start: span 2;
+        }
+        
         div.grid-photo-3w{
             grid-column-start: span 3;
         }
+
+        div.grid-photo-2t{
+            grid-row-start: span 2;
+        }
+
+        
 
     }
 
@@ -127,6 +151,8 @@
     div.grid-photo{
             height: 100%;
             width: 100%;
+            text-align: center;
+            
     }
     div.grid-text{
         background:  rgba(54, 52, 87, .7);
@@ -141,6 +167,7 @@
     div.grid-text>h3{
         color: white;
         text-align: center;
+        padding: 0!important;
     }
 
 
@@ -242,53 +269,116 @@
         </div>
         <div class="grid-photo" style="background: url(images/2021/19_samsbirthday.JPG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo grid-photo-3w" style="background: url(images/2021/20_snowstorm.jpeg); background-size: cover; background-position:center center;"></div>
-    </div>
-    <div class="text-aside">
-        <h3 class="photo-grid-aside">Though, to be honest, things started a bit chilly...</h3>
-    </div>
-    <div class="grid-photo-gallery"> 
+         </div>
+        
+         <div class="text-aside">
+            <h3 class="photo-grid-aside">Though, to be honest, things started out unusually chilly...</h3>
+        </div>
+        
+        <div class="grid-photo-gallery"> 
         <div class="grid-photo" style="background: url(images/2021/26_cozybirds.JPG); background-size: cover; background-position:center center;"></div>    
         <div class="grid-photo" style="background: url(images/2021/22_michaelfire.jpeg); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/24_samwood.JPG); background-size: cover; background-position:center center;"></div>
         <div class="grid-text">
             <h3>...then got a bit wet.</h3>
         </div>
+        <div class="grid-photo grid-photo-2w" style="background: url(images/2021/28_ShortFlood_ShortShort.gif); background-size: cover; background-position:center left;"></div>
+      
+        <div class="grid-photo grid-photo-2wx2t" style="background: url(images/2021/28_bluebonnetsbrennans.jpg); background-size: cover; background-position:center left;"></div>
         
-        <div class="grid-photo" style="background: url(images/2021/28_bluebonnetsbrennans.jpg); background-size: cover; background-position:center left;"></div>
-        <div class="grid-photo" style="background: url(images/2021/30_kawikabluebonnets.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-text grid-photo-2t">
+            <h3>But the wonky weather made for a big showing of bluebonnets.</h3>
+        </div>
+    </div>
+        <div class="text-aside">
+            <h3 class="photo-grid-aside">Which is about when Michael convinced our friend Kawika to move to Texas...</h3>
+        </div>
+    <div class="grid-photo-gallery"> 
+        <div class="grid-photo grid-photo-3wx2t" style="background: url(images/2021/30_kawikabluebonnets.JPG); background-size: cover; background-position:center center;"></div>
+    </div>
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">...and they've been up to no good ever since.</h3>
+    </div>
+
+    <div class="grid-photo-gallery"> 
         <!-- <div class="grid-photo" style="background: url(images/2021/32_bluebonnets_A.JPG); background-size: cover; background-position:top center;"></div> -->
-        <div class="grid-photo" style="background: url(images/2021/34_mischiefkawikaVID.gif); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo grid-photo-2wx2t" style="background: url(images/2021/34_mischiefkawikaVID.gif); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/36_cliffjumping.jpeg); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/38_butterhalf.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/40_walkinghenry.JPEG); background-size: cover; background-position:top center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/42_MeemaPapaVaccination.JPG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/44_jennysway.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo grid-photo-3wx2t" style="background: url(images/2021/40_walkinghenry.JPEG); background-size: cover; background-position:center top;"></div>
+        <div class="grid-text">
+            <h3>Meema and Papa Bob led the family in getting vaccinated. <br> (Finally!)</h3>
+        </div>
+        <div class="grid-photo grid-photo-2wx2t" style="background: url(images/2021/42_MeemaPapaVaccination.JPG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/56_famcircle.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/48_weddingreinactmentVID.gif); background-size: cover; background-position:center center;"></div>
+    </div>
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We were so happy to be able to visit everyone again!</h3>
+    </div> 
+    <div class="grid-photo-gallery"> 
+        <div class="grid-photo grid-photo-3wx2t" style="background: url(images/2021/70_bigfam.JPEG); background-size: cover; background-position:center top;"></div>
+        <div class="grid-text">
+            <h3>We walked Jennifer's Way.</h3>
+        </div>
+        <div class="grid-photo" style="background: url(images/2021/44_jennysway.JPG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo grid-photo-2t" style="background: url(images/2021/48_weddingreinactmentVID.gif); background-size: cover; background-position:center center;"></div>
+        
         <div class="grid-photo" style="background: url(images/2021/50_brennanfolders.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/52_juliemarried.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/54_julieweddinggroup.jpg); background-size: cover; background-position:center center;"></div>
+        
+        <div class="grid-text">
+            <h3>We updated our dental records to "Brennan!"</h3>
+        </div>
         <div class="grid-photo" style="background: url(images/2021/58_meema.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/60_grandmajulie.JPG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/62_jack.JPEG); background-size: cover; background-position:top center;"></div>
-        <!-- <div class="grid-photo" style="background: url(images/2021/64_frankie+addie.JPEG); background-size: cover; background-position:center center;"></div> -->
-        <!-- <div class="grid-photo" style="background: url(images/2021/66_rob+gillian.JPEG); background-size: cover; background-position:center center;"></div> -->
-        <div class="grid-photo" style="background: url(images/2021/68_rob+gillian+aquarium.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/70_bigfam.JPEG); background-size: cover; background-position:center center;"></div>
-        <!-- <div class="grid-photo" style="background: url(images/2021/72_meemapapasammimichael.JPEG); background-size: cover; background-position:center center;"></div> -->
+        <div class="grid-photo" style="background: url(images/2021/60_grandmajulie.JPG); background-size: cover; background-position:center center;"></div>
+    </div>
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We danced the night away at Julie's wedding.<br>(Congratulations, Julie and Michael!)</h3>
+    </div> 
+    <div class="grid-photo-gallery">
+        <div class="grid-photo" style="background: url(images/2021/52_juliemarried.JPEG); background-size: cover; background-position:center center;"></div>
+        <div class="grid-photo grid-photo-2w" style="background: url(images/2021/54_julieweddinggroup.jpg); background-size: cover; background-position:center center;"></div>
+        <div class="grid-text grid-photo-2w">
+            <h3>We took some trips to Florida.</h3>
+        </div>
+       
+       
         <div class="grid-photo" style="background: url(images/2021/74_swartzwelders.JPG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/76_addie+frankie.JPG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/78_earplants.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/80_giantfaces.JPEG); background-size: cover; background-position:center center;"></div>
+        
+        
         <div class="grid-photo" style="background: url(images/2021/82_paintingwgrandma.JPEG); background-size: cover; background-position:center center;"></div>
+        
+        <div class="grid-photo grid-photo-2t" style="background: url(images/2021/78_earplants.JPEG); background-size: cover; background-position:left center;"></div>
+        
         <div class="grid-photo" style="background: url(images/2021/84_floridarobmichael.JPEG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/86_floridafamporch.JPG); background-size: cover; background-position:top center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/88_floridagroup_A.jpg); background-size: cover; background-position:top center;"></div>
+        <div class="grid-photo grid-photo-3wx2t" style="background: url(images/2021/88_floridagroup_A.jpg); background-size: cover; background-position:top center;">
+            <div class="grid-photo animate-background" style="background: url(images/2021/88_floridagroup_B.jpg); background-size: cover; background-position:top center;"></div>
+            
+        </div>
+        <div class="grid-text grid-photo-2w">
+            <h3>And we hosted friends in Texas.</h3>
+        </div>
+
         <div class="grid-photo" style="background: url(images/2021/90_somuch.jpeg); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/92_sarah+stephanie.JPEG); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/94_simi.jpg); background-size: cover; background-position:center center;"></div>
         <div class="grid-photo" style="background: url(images/2021/96_heywho+nathan.JPEG); background-size: cover; background-position:center center;"></div>
-        <div class="grid-photo" style="background: url(images/2021/98_reunion.JPEG); background-size: cover; background-position:center center;"></div>
+    <!-- </div>
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">Ohia ohana reunited!</h3>
+    </div> 
+    <div class="grid-photo-gallery"> -->
+       
+        <div class="grid-photo grid-photo-3wx2t" style="background: url(images/2021/98_reunion.JPEG); background-size: cover; background-position:center bottom;">
+        <h3 class="photo-caption">Ohia ohana reunion!</h3>
+        </div>
+    </div>
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We'll be thinking of you all now<br>and wishing you a safe and cozy holiday.</h3>
+    </div> 
+    <div class="grid-photo-gallery">
         <div class="grid-photo" style="background: url(images/2021/100_christmas.JPEG); background-size: cover; background-position:center center;"></div>
 
 
@@ -296,7 +386,12 @@
 
 
 
-
+        <!-- <div class="grid-photo" style="background: url(images/2021/64_frankie+addie.JPEG); background-size: cover; background-position:center center;"></div> -->
+        <!-- <div class="grid-photo" style="background: url(images/2021/66_rob+gillian.JPEG); background-size: cover; background-position:center center;"></div> -->
+        <!-- <div class="grid-photo" style="background: url(images/2021/68_rob+gillian+aquarium.JPEG); background-size: cover; background-position:center center;"></div> -->
+        <!-- <div class="grid-photo" style="background: url(images/2021/72_meemapapasammimichael.JPEG); background-size: cover; background-position:center center;"></div> -->
+        <!-- <div class="grid-photo" style="background: url(images/2021/80_giantfaces.JPEG); background-size: cover; background-position:center center;"></div> -->
+       
     <div id="overview" class="flex100 flexColumn">
 		<h1 class="greenText">Happy 2022!</h1>
 		<h2  class="cursive">We wish you the best in the new year.</h2>
@@ -305,7 +400,9 @@
 		<h2 class="">Come again soon.</h2>
 		<div>
 			<p>We will keep updating this website, so you never know what you might find!</p>
-			<p>Miss the engagement website? Don't worry, <a href="https://unexpectedly.xyz/engagement">it's still here.</a></p>
+            <p>Miss the engagement website? Don't worry, <a href="https://unexpectedly.xyz/engagement">it's still here.</a>
+			<br>And the wedding photos? They're <a href="https://unexpectedly.xyz/wedding">here too.</a></p>
+            
 			<p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
 			<p>sam.siefert@gmail.com</p>
 		</div>
