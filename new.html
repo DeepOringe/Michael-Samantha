@@ -34,9 +34,9 @@
         width: 100%;    
     }
 
-    h1, h2, h3{
+    /* h1, h2, h3{
         color: var(--spacecadet);
-    }
+    } */
 
     div.flex{
         display: flex;
@@ -79,6 +79,15 @@
         line-height: 1;
     }
 
+    #overview-brennans{
+        width: 100%;
+        padding: 5rem 0 2rem 0;
+    }
+
+    #overview-brennans h1{
+        color: #58a4db;
+    }
+
     div.text-aside{
         width: 100%;
         padding: 2rem 0 1rem 0;
@@ -102,7 +111,7 @@
     div.grid-photo-gallery{
     width: 100%;
     
-    border-top: 10px solid white;
+    /* border-top: 10px solid white; */
 
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -202,13 +211,6 @@
 
 <body>
     <div id="banner-brennans" class="">
-        
-        <!-- <div class="flex">
-            <h1 class="expand wobble">&nbsp;</h1>
-            <h1 class="expand wobble">t</h1>
-            <h1 class="expand wobble">h</h1>
-            <h1 class="expand wobble">e</h1>
-        </div> -->
         <h2 class="cursive skewLeft">&nbsp;the&nbsp;</h2>
         <div class="flex">
             <h1 class="expand wobble">&nbsp;</h1>
@@ -223,7 +225,7 @@
         </div>
     </div>
 
-    <div>
+    <div id="overview-brennans">
         <h1>2021 year in review</h1>
     </div>
 
@@ -376,7 +378,7 @@
         </div>
     </div>
     <div class="text-aside">
-        <h3 class="photo-grid-aside">We'll be thinking of you all now<br>and wishing you a safe and cozy holiday.</h3>
+        <h3 class="photo-grid-aside">We'll be thinking of you all this time of year and wishing you a safe and cozy holiday.</h3>
     </div> 
     <div class="grid-photo-gallery">
         <div class="grid-photo" style="background: url(images/2021/100_christmas.JPEG); background-size: cover; background-position:center center;"></div>
