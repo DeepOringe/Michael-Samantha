@@ -26,7 +26,6 @@
     html{ 
         min-height: 100vw;
         min-width: 100%;
-        background: #f7f9fc; /*color from christmascard*/
     }
 
     body{
@@ -94,15 +93,11 @@
     div.text-overview{
         width: 100%;
         padding: 4rem 0 2rem 0;
-        
     }
 
-    div.text-overview h1, div.text-overview h2, #banner-brennans h2{
-        color: #58a4db;
-        color:rgba(54, 52, 87, 1)
+    div.text-overview>h1, div.text-overview>h2{
+        color: var(--spacecadet);
     }
-
-
 
     div.text-aside{
         width: 100%;
@@ -211,6 +206,7 @@
         width: 100%;
         opacity: 0;
         animation: alternate_background 2s none 1s infinite;
+        /* animation: alternate_background_1-5 5s none 1s infinite; */
     }
 
     .wobble{
@@ -248,11 +244,6 @@
             <h1 class="expand wobble">s</h1>
         </div>
     </div>
-
-    <!-- <div class="text-overview">
-        <h1>2021</h1>
-        <h2 class="text-center">the year in review</h2>
-    </div> -->
    
     <div class="grid-photo-gallery">
         <div class="grid-text flexColumn grid-photo-2t">
