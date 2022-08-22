@@ -182,6 +182,10 @@ body{
 	justify-content: center;
 }
 
+div.flex{
+	display: flex;
+}
+
 div.flex100{
 	/*one column item*/
 	flex: 0 0 100%;
