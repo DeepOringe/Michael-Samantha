@@ -6,7 +6,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Michael + Samantha | Are getting married!</title>
+	<title>The Brennans | A family website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -20,8 +20,295 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Michael and Samantha are getting married! Begin excitement now." />
+	<meta name="description" content="Family albums, mixtapes, and other tidbits." />
 	<meta name="author" content="Samantha Siefert">
 </head>
 
-</html>
+
+
+<style>
+    html{
+        background-color: #DAD9E8;
+    }
+
+    .purpleText{
+        color: var(--spacecadet);
+    }
+
+    h2>a{
+        font-weight: inherit;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+
+    /* internal layout */
+    
+    div.extraMargins{
+        margin: 3rem 0 3rem 0;
+    }
+    
+    #discography{
+        align-items: baseline;
+        position: relative;
+    }
+
+    div.twoPhotoContainer{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* THE BRENNANS animated header with border */
+    .block-header-container{
+        height: 100%;
+        width: 100%;
+
+        border: 20px solid white;
+        margin: 20px;
+
+        padding: 3em 1em 0 0;
+
+        display: flex;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media all and (max-width: 550px){
+        .block-header-container{
+            border: 10px solid white;
+            margin: 0 0 20px 0;
+            padding: 1em 0 0 0;
+            
+            justify-content: flex-start;
+        }
+    }
+
+    .block-header-container h1, h2{
+        padding: 0;
+        line-height: 1;
+    }
+
+
+    /* dino just for fun */
+    div.dino-walks-container{
+        width: 100%;
+        margin-top: -82px; /*so that dino walks on the header border*/
+        
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    div.dino-walks-container-animated{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 65px; /*bigger than the img.dino-walks so there is no overflow*/
+
+        animation-name: dino-walking;
+        animation-delay: 0s;
+        animation-direction: normal; 
+        animation-duration: 60s;
+        animation-fill-mode: none;
+        animation-iteration-count: infinite;   
+        animation-play-state: running;
+        animation-timing-function: linear;
+    }
+
+    img.dino-walks{
+        height: 45px;
+    }
+  
+    @keyframes dino-walking { 
+        0% {
+            transform: translateX(-100%)
+        }
+        100% {
+            transform: translateX(100%)
+        }
+    }
+
+    /* squiggle link effect from css tricks */
+    a.squiggle{
+        background: linear-gradient(to bottom, white 0%, white 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 3px 3px;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a.squiggle:hover{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    }
+
+    /* gradient background animation effect that I abandoned, 
+    
+    this version is basic and works but has animates background-position, which is bad
+        https://pocoloco.io/
+        https://codepen.io/jacksloan/pen/LYeoWYG
+    
+        background: linear-gradient(0.33turn, #f6a192, #ffd9df, #f6c492, #f6a192);
+       
+        background: linear-gradient(0.33turn, #B4B3D1, #E6E6F0, #CDCCE0, #B4B3D1); 
+      
+        background-size: 500% 500%;
+        animation: GradientBackground 12s ease infinite; 
+
+
+        @keyframes GradientBackground {
+                0%   { background-position: 0%   50%; }
+                50%  { background-position: 100% 50%; }
+                100% { background-position: 0%   50%; }
+            }
+    */
+
+</style>
+
+<body>
+
+    <div id="" class="block-header-container">
+        <h2 class="cursive skewLeft">&nbsp;the&nbsp;</h2>
+        <div class="flex">
+            <h1 class="expand wobble">&nbsp;</h1>
+            <h1 class="expand wobble">B</h1>
+            <h1 class="expand wobble">r</h1>
+            <h1 class="expand wobble">e</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">a</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">s</h1>
+        </div>
+    </div>
+
+
+
+
+    <div class="dino-walks-container">
+        <div class="dino-walks-container-animated">
+            <img class="dino-walks wobble" src="images/dinoIcon_reverse.png">
+        </div>
+    </div>
+
+
+
+
+    <div id="" class="flex100 flexColumn extraMargins">
+        <h1 class="purpleText">Everything is awesome.</h1>
+    </div>
+    
+
+
+
+    <div id="" class="twoPhotoContainer flex100 flex flex-wrap skewContainer">
+        <div class="polaroidContainer skewLeft">
+            <div class="polaroidPhoto" style="background: url(images/homepage/MichaelAlt.JPG); background-size: cover; background-position: 10% center"></div>
+            <p class="label">Michael</p>
+        </div>
+        <div class="polaroidContainer skewRight">
+            <div class="polaroidPhoto" style="background: url(images/homepage/SamanthaAlt.JPG); background-size: cover; background-position: center center;">
+                <!-- <div class="polaroidPhoto animate-background" style="background: url(images/homepage/tankgirl.png); background-size: cover; background-position:center center;"></div> -->
+            </div>
+            <p class="label">Samantha</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="" class="flex100 flexColumn extraMargins"></div>
+        <div id="discography" class="">
+            <h1 class="purpleText">Albums & Mixtapes</h1>
+                <ul>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/2022.html">2022</a></h2></li>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/2021.html">2021</a></h2></li>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/wedding.html">Wedding</a></h2></li>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/engagement.html">Engagement</h2></a></li>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/timewarp.html">Time Warp</a></h2></li>
+                    <li>
+                        <h2>
+                            <a class="squiggle" href="/Michael-Samantha/timewarp.html">Mixtape</a></h2></li>
+
+                </ul>
+                <br>
+                <!-- <img class="mixtape" src="images/mixtape.png">  -->
+        </div>
+    </div>
+
+
+
+    
+    <div id="" class="flex flex100 flexColumn skewContainer">
+        <div class="polaroidContainer skewRight">
+            <div class="polaroidPhoto " style="background: url(images/homepage/JoshuaTree1.JPG); background-size: cover; background-position: center left;">
+                <!-- <div class="polaroidPhoto animate-background" style="background: url(images/homepage/MKB10500.JPG); background-size: cover; background-position:center left;"></div> -->
+            </div>
+            <p class="label">Joshua Tree National Park</p>
+        </div>
+            <div class="polaroidContainer skewLeft">
+                <div class="polaroidPhoto " style="background: url(images/homepage/JoshuaTree2.JPG); background-size: cover; background-position: center left;">
+                    <!-- <div class="polaroidPhoto animate-background" style="background: url(images/homepage/MKB10500.JPG); background-size: cover; background-position:center left;"></div> -->
+                </div>
+                <p class="label">California</p>
+            </div>
+            <div class="polaroidContainer skewRight">
+                <div class="polaroidPhoto " style="background: url(images/homepage/JoshuaTree3.JPG); background-size: cover; background-position: center left;">
+                    <!-- <div class="polaroidPhoto animate-background" style="background: url(images/homepage/MKB10500.JPG); background-size: cover; background-position:center left;"></div> -->
+                </div>
+                <p class="label">August 2020</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="" class="flex100 flexColumn extraMargins">    
+        <br>
+        <h1 class="text-center purpleText ">See you later, achillobators!</h1>
+        <!-- <h2 class="text-center purpleText">(After a while if you're a crocodile.)</h2>        -->
+    </div>
+
+
+
+
+    <div id="footer" class="flex100">
+           <h2 class="">Come again soon.</h2>
+
+            <div>
+                <p>We keep updating this website, so you never know what you might find!</p>
+                
+                <p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+                <p>sam.siefert@gmail.com</p>
+            </div>
+    
+            <p class="cursive exitMusic">exit music</p>
+            
+            <img id="dinoIcon" src="images/dinoIcon.png"> 
+    </div>
+
+    <div class="audioContainer">
+        <audio controls>
+            <source src="audio/SeaShanty2.mp3" type="audio/mpeg">
+        </audio>
+    </div>	
+
+    </body>
+    </html> 
