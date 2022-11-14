@@ -46,7 +46,7 @@
     /* internal layout */
     
     div.extraMargins{
-        margin: 3rem 0 3rem 0;
+        margin: 3rem 0 3rem 0; /*This structure is kind of jankety, but it works and I'm done thinking about it...for now.*/
     }
     
     #discography{
@@ -169,6 +169,26 @@
             }
     */
 
+    div.achillobators{
+        height: 156px;
+        width: 100%;
+        background-image: url("/images/achillobator.png");
+        background-repeat: repeat-x;
+        background-position: 40%;
+
+        position: relative;
+    }
+    div.achillobators>a{
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+
+    }
+
 </style>
 
 <body>
@@ -283,8 +303,11 @@
     <div id="" class="flex100 flexColumn extraMargins">    
         <br>
         <h1 class="text-center purpleText cursive ">See you later, achillobators!</h1>
-        <!-- <h2 class="text-center purpleText">(After a while if you're a crocodile.)</h2>        -->
+        <div class="achillobators">
+            <a target="_blank" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Achillobator_reconstruction.png"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Wikimedia-logo.svg" height=20px;></a>
+        </div>
     </div>
+    
 
 
 
