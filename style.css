@@ -260,6 +260,39 @@ div.invertColors p{
 /* Section styles*/
 
 
+/*THE BRENNANS animated header with border*/
+
+    .block-header-container{
+        height: 100%;
+        width: 100%;
+
+        border: 20px solid white;
+        margin: 20px;
+
+        padding: 3em 1em 0 0;
+
+        display: flex;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media all and (max-width: 550px){
+        .block-header-container{
+            border: 10px solid white;
+            margin: 0 0 20px 0;
+            padding: 1em 0 0 0;
+            
+            justify-content: flex-start;
+        }
+    }
+
+    .block-header-container h1, .block-header-container h2{
+        padding: 0;
+        line-height: 1;
+    }
+
+
 #banner{
 	position: relative;
 	z-index: 15;
