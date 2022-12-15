@@ -38,9 +38,9 @@
         padding: 4rem 0 2rem 0;
     }
 
-    /* div.text-overview>h1, div.text-overview>h2{
+    div.text-overview>h1, div.text-overview>h2{
         color: var(--spacecadet);
-    }   */
+    }  
 
     img{
         height: 100%;
@@ -49,16 +49,16 @@
         
     }
 
-    /*disappearing span is copied from 2021 for optional bits of text too lengthy for small screen design and should be added to main css
+    /* disappearing span is copied from 2021 for optional bits of text too lengthy for small screen design and should be added to main css */
     h3>span.disappearing-span{
         font-weight: inherit;
         line-height: inherit;
     }
-    @media all and (max-width: 600px){
+    @media all and (max-width: 700px){ /*700 px on this page; 600px on 2021 page*/
     h3>span.disappearing-span{
         display: none;
         }
-    } */
+    }
 
 </style>
 
@@ -253,7 +253,7 @@
         <img class="grid-photo" src="images/2022/82_TurkeyTime.jpeg">
 
         <div class="grid-text">
-            <h3>and Ginna and Ron hosted the perfect Thanksgiving.<br>(Thank you so much for having us!)</h3>
+            <h3>and Ginna and Ron hosted the perfect Thanksgiving.<br><span class="disappearing-span">(Thank you so much for having us!)</span></h3>
         </div>
         <img class="grid-photo-3wx2t" src="images/2022/107_CentralPark.JPEG" style="object-position: center 70%">
 
