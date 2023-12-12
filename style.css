@@ -952,6 +952,16 @@ div.grid-photo-gallery{
         opacity: 0;
         animation: alternate_background 2s none 1s infinite;
         /* animation: alternate_background_1-5 5s none 1s infinite; */
+	}
+	
+	/* better animation for photo alternation? */
+	div.animate-background-slowly{
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+		animation: alternate_background 10s none 1s infinite;
+	
+        /* animation: alternate_background_1-5 5s none 1s infinite; */
     }
 
 	/* letter wobble */
