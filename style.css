@@ -873,7 +873,15 @@ div.grid-photo-gallery{
         color: white;
         padding: .25rem;
         margin: 2rem;
-    }
+	}
+	
+	div.caption-bottom{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	div.caption-bottom>h3{
+		display: block;
+	}
 
 
 
