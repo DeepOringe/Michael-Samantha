@@ -879,9 +879,7 @@ div.grid-photo-gallery{
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	div.caption-bottom>h3{
-		display: block;
-	}
+
 
 
 
