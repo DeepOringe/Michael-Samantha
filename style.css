@@ -123,6 +123,7 @@ li{
 
 	line-height: 1.6;
 	margin-bottom: 1rem;
+	margin-left: 1rem;
 
 	color: rgba(255, 255, 255, .8);
 	color: hsl(0, 0, 37%);
@@ -226,6 +227,11 @@ div.flexSpaceApart{
 	display: flex; 
 	justify-content: space-between;
 }
+
+div.flexSpaceAround{
+	justify-content: space-around;
+}
+
 div.invertColors{
 	background-color: var(--lightblue);
 
@@ -736,6 +742,7 @@ div.sliderContainer>*{
 }
 
 #footer{
+	width: 100%;
 	position: relative;
 	background: var(--spacecadet);
 

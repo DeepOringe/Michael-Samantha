@@ -1,0 +1,306 @@
+<svg height="2000" width="4000" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 3/3/2024, 1:29:45 PM -->
+<rect height="2000" width="4000" fill="#ffffff"></rect>
+<g transform="translate(111.44816,18)">
+<g id="sankey_flows">
+<path id="flow0" d="M12 711.71872C320.44874 711.71872 320.44874 731.04218 628.89749 731.04218" fill="none" stroke-width="1320.27736" stroke="#17becf" opacity="0.45"><title>Wages → Budget: 182,899.58</title></path>
+<path id="flow4" d="M640.89749 740.65355C949.34623 740.65355 949.34623 721.90184 1257.79497 721.90184" fill="none" stroke-width="762.01279" stroke="#1f77b4" opacity="0.45"><title>Budget → Savings: 105,562.53</title></path>
+<path id="flow9" d="M1269.79497 804.91564C1578.24372 804.91564 1578.24372 759.56615 1886.69246 759.56615" fill="none" stroke-width="595.98518" stroke="#9467bd" opacity="0.45"><title>Savings → Brokerage (?): 82,562.53</title></path>
+<path id="flow5" d="M640.89749 1364.69928C949.34623 1364.69928 949.34623 1398.09935 1257.79497 1398.09935" fill="none" stroke-width="486.07866" stroke="#1f77b4" opacity="0.45"><title>Budget → Spending: 67,337.05</title></path>
+<path id="flow3" d="M640.89749 215.27533C949.34623 215.27533 949.34623 144.37183 1257.79497 144.37183" fill="none" stroke-width="288.74366" stroke="#1f77b4" opacity="0.45"><title>Budget → Taxes (?): 40,000.00</title></path>
+<path id="flow1" d="M12 1532.28806C320.44874 1532.28806 320.44874 1499.45974 628.89749 1499.45974" fill="none" stroke-width="216.55775" stroke="#ff7f0e" opacity="0.45"><title>Bonus → Budget: 30,000.00</title></path>
+<path id="flow2" d="M12 1800.99759C320.44874 1800.99759 320.44874 1716.01748 628.89749 1716.01748" fill="none" stroke-width="216.55775" stroke="#2ca02c" opacity="0.45"><title>Stock → Budget: 30,000.00</title></path>
+<path id="flow6" d="M640.89749 1716.01748C949.34623 1716.01748 949.34623 1801.56934 1257.79497 1801.56934" fill="none" stroke-width="216.55775" stroke="#1f77b4" opacity="0.45"><title>Budget → New Tesla: 30,000.00</title></path>
+<path id="flow10" d="M1269.79497 1382.07404C1578.24372 1382.07404 1578.24372 1388.87633 1886.69246 1388.87633" fill="none" stroke-width="155.99088" stroke="#8c564b" opacity="0.45"><title>Spending → Rent + Utilities: 21,609.60</title></path>
+<path id="flow11" d="M1269.79497 1229.56931C1578.24372 1229.56931 1578.24372 1184.21981 1886.69246 1184.21981" fill="none" stroke-width="149.01858" stroke="#8c564b" opacity="0.45"><title>Spending → Food: 20,643.72</title></path>
+<path id="flow13" d="M1269.79497 1594.19766C1578.24372 1594.19766 1578.24372 1757.45531 1886.69246 1757.45531" fill="none" stroke-width="93.88204" stroke="#8c564b" opacity="0.45"><title>Spending → General: 13,005.59</title></path>
+<path id="flow7" d="M1269.79497 387.81629C1578.24372 387.81629 1578.24372 238.16322 1886.69246 238.16322" fill="none" stroke-width="93.84169" stroke="#9467bd" opacity="0.45"><title>Savings → Roth IRA: 13,000.00</title></path>
+<path id="flow15" d="M1898.69246 1149.57065C2207.1412 1149.57065 2207.1412 941.29254 2515.58995 941.29254" fill="none" stroke-width="79.72025" stroke="#8c564b" opacity="0.45"><title>Food → Restaurants: 11,043.74</title></path>
+<path id="flow8" d="M1269.79497 470.8301C1578.24372 470.8301 1578.24372 373.32881 1886.69246 373.32881" fill="none" stroke-width="72.18592" stroke="#9467bd" opacity="0.45"><title>Savings → 401k (?): 10,000.00</title></path>
+<path id="flow16" d="M1898.69246 1224.07994C2207.1412 1224.07994 2207.1412 1067.95361 2515.58995 1067.95361" fill="none" stroke-width="69.29833" stroke="#e377c2" opacity="0.45"><title>Food → Groceries: 9,599.98</title></path>
+<path id="flow14" d="M1269.79497 1487.61014C1578.24372 1487.61014 1578.24372 1546.56421 1886.69246 1546.56421" fill="none" stroke-width="55.08132" stroke="#8c564b" opacity="0.45"><title>Spending → Extra: 7,630.48</title></path>
+<path id="flow28" d="M1898.69246 1542.97903C2207.1412 1542.97903 2207.1412 1178.71004 2515.58995 1178.71004" fill="none" stroke-width="47.91095" stroke="#7f7f7f" opacity="0.45"><title>Extra → Fun: 6,637.16</title></path>
+<path id="flow12" d="M1269.79497 1531.20372C1578.24372 1531.20372 1578.24372 1642.30958 1886.69246 1642.30958" fill="none" stroke-width="32.10584" stroke="#8c564b" opacity="0.45"><title>Spending → Transportation: 4,447.66</title></path>
+<path id="flow18" d="M1898.69246 1639.52078C2207.1412 1639.52078 2207.1412 1379.55537 2515.58995 1379.55537" fill="none" stroke-width="26.52825" stroke="#bcbd22" opacity="0.45"><title>Transportation → Registration + Fees: 3,674.99</title></path>
+<path id="flow21" d="M1898.69246 1723.25871C2207.1412 1723.25871 2207.1412 1567.95167 2515.58995 1567.95167" fill="none" stroke-width="25.48885" stroke="#d62728" opacity="0.45"><title>General → General Merchandise: 3,531.00</title></path>
+<path id="flow31" d="M2527.58995 1190.17598C2836.03869 1190.17598 2836.03869 1212.64673 3144.48743 1212.64673" fill="none" stroke-width="24.97907" stroke="#1f77b4" opacity="0.45"><title>Fun → Hobbies: 3,460.38</title></path>
+<path id="flow32" d="M2527.58995 1166.22051C2836.03869 1166.22051 2836.03869 1136.53947 3144.48743 1136.53947" fill="none" stroke-width="22.93188" stroke="#ff7f0e" opacity="0.45"><title>Fun → Travel: 3,176.78</title></path>
+<path id="flow22" d="M1898.69246 1746.17171C2207.1412 1746.17171 2207.1412 1643.01645 2515.58995 1643.01645" fill="none" stroke-width="20.33715" stroke="#ff7f0e" opacity="0.45"><title>General → Clothing/Shoes: 2,817.33</title></path>
+<path id="flow35" d="M3156.48743 1210.29076C3464.93618 1210.29076 3464.93618 1194.40364 3773.38492 1194.40364" fill="none" stroke-width="20.26713" stroke="#9467bd" opacity="0.45"><title>Hobbies → Videogames: 2,807.63</title></path>
+<path id="flow23" d="M1898.69246 1764.58063C2207.1412 1764.58063 2207.1412 1713.57716 2515.58995 1713.57716" fill="none" stroke-width="16.48069" stroke="#2ca02c" opacity="0.45"><title>General → Healthcare: 2,283.09</title></path>
+<path id="flow24" d="M1898.69246 1772.82098v13.65404L2515.58995 1787.62333v-13.65404z" fill="#d62728" stroke-width="0.5" stroke="#d62728" opacity="0.45"><title>General → Personal Care: 1,891.51</title></path>
+<path id="flow25" d="M1898.69246 1790.94571C2207.1412 1790.94571 2207.1412 1844.24581 2515.58995 1844.24581" fill="none" stroke-width="8.94138" stroke="#9467bd" opacity="0.45"><title>General → Telephone: 1,238.66</title></path>
+<path id="flow26" d="M1898.69246 1798.85606C2207.1412 1798.85606 2207.1412 1904.30795 2515.58995 1904.30795" fill="none" stroke-width="6.87932" stroke="#8c564b" opacity="0.45"><title>General → Subscriptions: 953.00</title></path>
+<path id="flow29" d="M1898.69246 1569.68955C2207.1412 1569.68955 2207.1412 1257.57235 2515.58995 1257.57235" fill="none" stroke-width="5.5101" stroke="#bcbd22" opacity="0.45"><title>Extra → Giving: 763.32</title></path>
+<path id="flow33" d="M2527.58995 1257.38106C2836.03869 1257.38106 2836.03869 1279.8518 3144.48743 1279.8518" fill="none" stroke-width="5.12751" stroke="#2ca02c" opacity="0.45"><title>Giving → Gifts: 710.32</title></path>
+<path id="flow19" d="M1898.69246 1655.2511C2207.1412 1655.2511 2207.1412 1447.43748 2515.58995 1447.43748" fill="none" stroke-width="4.93239" stroke="#17becf" opacity="0.45"><title>Transportation → Gas: 683.29</title></path>
+<path id="flow36" d="M3156.48743 1221.95044C3464.93618 1221.95044 3464.93618 1258.21511 3773.38492 1258.21511" fill="none" stroke-width="3.05224" stroke="#8c564b" opacity="0.45"><title>Hobbies → Art: 422.83</title></path>
+<path id="flow17" d="M2527.58995 978.2339v2.91877L3144.48743 981.15266v-2.91877z" fill="#7f7f7f" stroke-width="0.5" stroke="#7f7f7f" opacity="0.45"><title>Restaurants → Coffee: 404.34</title></path>
+<path id="flow27" d="M1898.69246 1803.34602C2207.1412 1803.34602 2207.1412 1960.94969 2515.58995 1960.94969" fill="none" stroke-width="2.10061" stroke="#e377c2" opacity="0.45"><title>General → Education: 291.00</title></path>
+<path id="flow30" d="M1898.69246 1573.27473C2207.1412 1573.27473 2207.1412 1313.30932 2515.58995 1313.30932" fill="none" stroke-width="1.66028" stroke="#17becf" opacity="0.45"><title>Extra → Other: 230.00</title></path>
+<path id="flow40" d="M2527.58995 1313.30932C2836.03869 1313.30932 2836.03869 1388.54927 3144.48743 1388.54927" fill="none" stroke-width="1.66028" stroke="#17becf" opacity="0.45"><title>Other → Italian Citizenship: 230.00</title></path>
+<path id="flow37" d="M3156.48743 1223.88051C3464.93618 1223.88051 3464.93618 1312.29696 3773.38492 1312.29696" fill="none" stroke-width="1" stroke="#e377c2" opacity="0.45"><title>Hobbies → Books: 111.92</title></path>
+<path id="flow20" d="M1898.69246 1658.0399C2207.1412 1658.0399 2207.1412 1502.37806 2515.58995 1502.37806" fill="none" stroke-width="1" stroke="#1f77b4" opacity="0.45"><title>Transportation → Tolls: 89.38</title></path>
+<path id="flow38" d="M3156.48743 1224.51907C3464.93618 1224.51907 3464.93618 1365.2794 3773.38492 1365.2794" fill="none" stroke-width="1" stroke="#7f7f7f" opacity="0.45"><title>Hobbies → Swimming: 65.00</title></path>
+<path id="flow34" d="M2527.58995 1260.1361C2836.03869 1260.1361 2836.03869 1334.75863 3144.48743 1334.75863" fill="none" stroke-width="1" stroke="#d62728" opacity="0.45"><title>Giving → Charities: 53.00</title></path>
+<path id="flow39" d="M3156.48743 1224.94497C3464.93618 1224.94497 3464.93618 1418.38788 3773.38492 1418.38788" fill="none" stroke-width="1" stroke="#bcbd22" opacity="0.45"><title>Hobbies → Gardening: 53.00</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="51.58004" height="1320.27736" width="12" fill="#17becf" fill-opacity="1"><title>Wages:
+182,899.58</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="628.89749" y="70.9035" height="1753.39286" width="12" fill="#1f77b4" fill-opacity="1"><title>Budget:
+242,899.58</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="1424.00919" height="216.55775" width="12" fill="#ff7f0e" fill-opacity="1"><title>Bonus:
+30,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="0" y="1692.71872" height="216.55775" width="12" fill="#2ca02c" fill-opacity="1"><title>Stock:
+30,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="1257.79497" y="0" height="288.74366" width="12" fill="#d62728" fill-opacity="1"><title>Taxes (?):
+40,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="1257.79497" y="340.89545" height="762.01279" width="12" fill="#9467bd" fill-opacity="1"><title>Savings:
+105,562.53</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="1257.79497" y="1155.06002" height="486.07866" width="12" fill="#8c564b" fill-opacity="1"><title>Spending:
+67,337.05</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="1257.79497" y="1693.29047" height="216.55775" width="12" fill="#e377c2" fill-opacity="1"><title>New Tesla:
+30,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r8" class="for_r8" x="1886.69246" y="191.24238" height="93.84169" width="12" fill="#7f7f7f" fill-opacity="1"><title>Roth IRA:
+13,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r9" class="for_r9" x="1886.69246" y="337.23585" height="72.18592" width="12" fill="#bcbd22" fill-opacity="1"><title>401k (?):
+10,000.00</title></rect>
+</g>
+<g class="node">
+<rect id="r10" class="for_r10" x="1886.69246" y="461.57356" height="595.98518" width="12" fill="#17becf" fill-opacity="1"><title>Brokerage (?):
+82,562.53</title></rect>
+</g>
+<g class="node">
+<rect id="r11" class="for_r11" x="1886.69246" y="1310.88089" height="155.99088" width="12" fill="#1f77b4" fill-opacity="1"><title>Rent + Utilities:
+21,609.60</title></rect>
+</g>
+<g class="node">
+<rect id="r12" class="for_r12" x="1886.69246" y="1109.71052" height="149.01858" width="12" fill="#ff7f0e" fill-opacity="1"><title>Food:
+20,643.72</title></rect>
+</g>
+<g class="node">
+<rect id="r13" class="for_r13" x="1886.69246" y="1626.25666" height="32.10584" width="12" fill="#2ca02c" fill-opacity="1"><title>Transportation:
+4,447.66</title></rect>
+</g>
+<g class="node">
+<rect id="r14" class="for_r14" x="1886.69246" y="1710.51428" height="93.88204" width="12" fill="#d62728" fill-opacity="1"><title>General:
+13,005.59</title></rect>
+</g>
+<g class="node">
+<rect id="r15" class="for_r15" x="1886.69246" y="1519.02355" height="55.08132" width="12" fill="#9467bd" fill-opacity="1"><title>Extra:
+7,630.48</title></rect>
+</g>
+<g class="node">
+<rect id="r16" class="for_r16" x="2515.58995" y="901.43241" height="79.72025" width="12" fill="#8c564b" fill-opacity="1"><title>Restaurants:
+11,043.74</title></rect>
+</g>
+<g class="node">
+<rect id="r17" class="for_r17" x="2515.58995" y="1033.30445" height="69.29833" width="12" fill="#e377c2" fill-opacity="1"><title>Groceries:
+9,599.98</title></rect>
+</g>
+<g class="node">
+<rect id="r18" class="for_r18" x="3144.48743" y="978.2339" height="2.91877" width="12" fill="#7f7f7f" fill-opacity="1"><title>Coffee:
+404.34</title></rect>
+</g>
+<g class="node">
+<rect id="r19" class="for_r19" x="2515.58995" y="1366.29124" height="26.52825" width="12" fill="#bcbd22" fill-opacity="1"><title>Registration + Fees:
+3,674.99</title></rect>
+</g>
+<g class="node">
+<rect id="r20" class="for_r20" x="2515.58995" y="1444.97128" height="4.93239" width="12" fill="#17becf" fill-opacity="1"><title>Gas:
+683.29</title></rect>
+</g>
+<g class="node">
+<rect id="r21" class="for_r21" x="2515.58995" y="1502.05546" height="1" width="12" fill="#1f77b4" fill-opacity="1"><title>Tolls:
+89.38</title></rect>
+</g>
+<g class="node">
+<rect id="r22" class="for_r22" x="2515.58995" y="1555.20724" height="25.48885" width="12" fill="#d62728" fill-opacity="1"><title>General Merchandise:
+3,531.00</title></rect>
+</g>
+<g class="node">
+<rect id="r23" class="for_r23" x="2515.58995" y="1632.84788" height="20.33715" width="12" fill="#ff7f0e" fill-opacity="1"><title>Clothing/Shoes:
+2,817.33</title></rect>
+</g>
+<g class="node">
+<rect id="r24" class="for_r24" x="2515.58995" y="1705.33682" height="16.48069" width="12" fill="#2ca02c" fill-opacity="1"><title>Healthcare:
+2,283.09</title></rect>
+</g>
+<g class="node">
+<rect id="r25" class="for_r25" x="2515.58995" y="1773.9693" height="13.65404" width="12" fill="#d62728" fill-opacity="1"><title>Personal Care:
+1,891.51</title></rect>
+</g>
+<g class="node">
+<rect id="r26" class="for_r26" x="2515.58995" y="1839.77512" height="8.94138" width="12" fill="#9467bd" fill-opacity="1"><title>Telephone:
+1,238.66</title></rect>
+</g>
+<g class="node">
+<rect id="r27" class="for_r27" x="2515.58995" y="1900.86829" height="6.87932" width="12" fill="#8c564b" fill-opacity="1"><title>Subscriptions:
+953.00</title></rect>
+</g>
+<g class="node">
+<rect id="r28" class="for_r28" x="2515.58995" y="1959.89939" height="2.10061" width="12" fill="#e377c2" fill-opacity="1"><title>Education:
+291.00</title></rect>
+</g>
+<g class="node">
+<rect id="r29" class="for_r29" x="2515.58995" y="1154.75457" height="47.91095" width="12" fill="#7f7f7f" fill-opacity="1"><title>Fun:
+6,637.16</title></rect>
+</g>
+<g class="node">
+<rect id="r30" class="for_r30" x="2515.58995" y="1254.8173" height="5.5101" width="12" fill="#bcbd22" fill-opacity="1"><title>Giving:
+763.32</title></rect>
+</g>
+<g class="node">
+<rect id="r31" class="for_r31" x="2515.58995" y="1312.47918" height="1.66028" width="12" fill="#17becf" fill-opacity="1"><title>Other:
+230.00</title></rect>
+</g>
+<g class="node">
+<rect id="r32" class="for_r32" x="3144.48743" y="1200.15719" height="24.97907" width="12" fill="#1f77b4" fill-opacity="1"><title>Hobbies:
+3,460.38</title></rect>
+</g>
+<g class="node">
+<rect id="r33" class="for_r33" x="3144.48743" y="1125.07353" height="22.93188" width="12" fill="#ff7f0e" fill-opacity="1"><title>Travel:
+3,176.78</title></rect>
+</g>
+<g class="node">
+<rect id="r34" class="for_r34" x="3144.48743" y="1277.28805" height="5.12751" width="12" fill="#2ca02c" fill-opacity="1"><title>Gifts:
+710.32</title></rect>
+</g>
+<g class="node">
+<rect id="r35" class="for_r35" x="3144.48743" y="1334.56734" height="1" width="12" fill="#d62728" fill-opacity="1"><title>Charities:
+53.00</title></rect>
+</g>
+<g class="node">
+<rect id="r36" class="for_r36" x="3773.38492" y="1184.27007" height="20.26713" width="12" fill="#9467bd" fill-opacity="1"><title>Videogames:
+2,807.63</title></rect>
+</g>
+<g class="node">
+<rect id="r37" class="for_r37" x="3773.38492" y="1256.68899" height="3.05224" width="12" fill="#8c564b" fill-opacity="1"><title>Art:
+422.83</title></rect>
+</g>
+<g class="node">
+<rect id="r38" class="for_r38" x="3773.38492" y="1311.89301" height="1" width="12" fill="#e377c2" fill-opacity="1"><title>Books:
+111.92</title></rect>
+</g>
+<g class="node">
+<rect id="r39" class="for_r39" x="3773.38492" y="1365.0448" height="1" width="12" fill="#7f7f7f" fill-opacity="1"><title>Swimming:
+65.00</title></rect>
+</g>
+<g class="node">
+<rect id="r40" class="for_r40" x="3773.38492" y="1418.19658" height="1" width="12" fill="#bcbd22" fill-opacity="1"><title>Gardening:
+53.00</title></rect>
+</g>
+<g class="node">
+<rect id="r41" class="for_r41" x="3144.48743" y="1387.71913" height="1.66028" width="12" fill="#17becf" fill-opacity="1"><title>Italian Citizenship:
+230.00</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="1888.55184" y="1975" font-size="15.5189px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<rect id="label0_bg" class="for_r0" x="-99.44816" y="691.19375" width="97.81547" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.29754" y="711.71872" font-weight="400" font-size="14.4px" dy="-5.125">Wages<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">182,899.58</tspan></text>
+<rect id="label1_bg" class="for_r1" x="586.18965" y="927.07491" width="97.81547" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="middle" x="634.89749" y="947.59993" font-weight="400" font-size="14.4px" dy="-5.125">Budget<tspan x="634.89749" dy="19.32" font-weight="400" font-size="17.6px">242,899.58</tspan></text>
+<rect id="label2_bg" class="for_r2" x="-89.66691" y="1511.76309" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="-6.29754" y="1532.28806" font-weight="400" font-size="14.4px" dy="-5.125">Bonus<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">30,000.00</tspan></text>
+<rect id="label3_bg" class="for_r3" x="-89.66691" y="1780.47256" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label3" class="for_r3" text-anchor="end" x="-6.29754" y="1800.99759" font-weight="400" font-size="14.4px" dy="-5.125">Stock<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">30,000.00</tspan></text>
+<rect id="label4_bg" class="for_r4" x="1271.42769" y="123.84683" width="88.03422" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="start" x="1276.09251" y="144.37183" font-weight="400" font-size="14.4px" dy="-5.125">Taxes (?)<tspan x="1276.09251" dy="19.32" font-weight="400" font-size="17.6px">40,000.00</tspan></text>
+<rect id="label5_bg" class="for_r5" x="1215.08711" y="701.37686" width="97.81547" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label5" class="for_r5" text-anchor="middle" x="1263.79497" y="721.90184" font-weight="400" font-size="14.4px" dy="-5.125">Savings<tspan x="1263.79497" dy="19.32" font-weight="400" font-size="17.6px">105,562.53</tspan></text>
+<rect id="label6_bg" class="for_r6" x="1219.97773" y="1377.57437" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label6" class="for_r6" text-anchor="middle" x="1263.79497" y="1398.09935" font-weight="400" font-size="14.4px" dy="-5.125">Spending<tspan x="1263.79497" dy="19.32" font-weight="400" font-size="17.6px">67,337.05</tspan></text>
+<rect id="label7_bg" class="for_r7" x="1271.42769" y="1781.04434" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label7" class="for_r7" text-anchor="start" x="1276.09251" y="1801.56934" font-weight="400" font-size="14.4px" dy="-5.125">New Tesla<tspan x="1276.09251" dy="19.32" font-weight="400" font-size="17.6px">30,000.00</tspan></text>
+<rect id="label8_bg" class="for_r8" x="1900.32515" y="217.63822" width="88.03422" height="41.11999" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label8" class="for_r8" text-anchor="start" x="1904.99" y="238.16322" font-weight="400" font-size="14.4px" dy="-5.125">Roth IRA<tspan x="1904.99" dy="19.32" font-weight="400" font-size="17.6px">13,000.00</tspan></text>
+<rect id="label9_bg" class="for_r9" x="1900.32515" y="352.8038" width="88.03422" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label9" class="for_r9" text-anchor="start" x="1904.99" y="373.32881" font-weight="400" font-size="14.4px" dy="-5.125">401k (?)<tspan x="1904.99" dy="19.32" font-weight="400" font-size="17.6px">10,000.00</tspan></text>
+<rect id="label10_bg" class="for_r10" x="1900.32515" y="739.04116" width="97.76859" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label10" class="for_r10" text-anchor="start" x="1904.99" y="759.56615" font-weight="400" font-size="14.4px" dy="-5.125">Brokerage (?)<tspan x="1904.99" dy="19.32" font-weight="400" font-size="17.6px">82,562.53</tspan></text>
+<rect id="label11_bg" class="for_r11" x="1900.32515" y="1368.35134" width="102.96391" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label11" class="for_r11" text-anchor="start" x="1904.99" y="1388.87633" font-weight="400" font-size="14.4px" dy="-5.125">Rent + Utilities<tspan x="1904.99" dy="19.32" font-weight="400" font-size="17.6px">21,609.60</tspan></text>
+<rect id="label12_bg" class="for_r12" x="1848.87532" y="1163.69485" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label12" class="for_r12" text-anchor="middle" x="1892.69246" y="1184.21981" font-weight="400" font-size="14.4px" dy="-5.125">Food<tspan x="1892.69246" dy="19.32" font-weight="400" font-size="17.6px">20,643.72</tspan></text>
+<rect id="label13_bg" class="for_r13" x="1841.8675" y="1621.78457" width="102.04984" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label13" class="for_r13" text-anchor="middle" x="1892.69246" y="1642.30958" font-weight="400" font-size="14.4px" dy="-5.125">Transportation<tspan x="1892.69246" dy="19.32" font-weight="400" font-size="17.6px">4,447.66</tspan></text>
+<rect id="label14_bg" class="for_r14" x="1848.87532" y="1736.93032" width="88.03422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label14" class="for_r14" text-anchor="middle" x="1892.69246" y="1757.45531" font-weight="400" font-size="14.4px" dy="-5.125">General<tspan x="1892.69246" dy="19.32" font-weight="400" font-size="17.6px">13,005.59</tspan></text>
+<rect id="label15_bg" class="for_r15" x="1853.76985" y="1526.03921" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label15" class="for_r15" text-anchor="middle" x="1892.69246" y="1546.56421" font-weight="400" font-size="14.4px" dy="-5.125">Extra<tspan x="1892.69246" dy="19.32" font-weight="400" font-size="17.6px">7,630.48</tspan></text>
+<rect id="label16_bg" class="for_r16" x="2478.10469" y="920.76754" width="87.37016" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label16" class="for_r16" text-anchor="middle" x="2521.58995" y="941.29254" font-weight="400" font-size="14.4px" dy="-5.125">Restaurants<tspan x="2521.58995" dy="19.32" font-weight="400" font-size="17.6px">11,043.74</tspan></text>
+<rect id="label17_bg" class="for_r17" x="2529.22261" y="1047.42861" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label17" class="for_r17" text-anchor="start" x="2533.88749" y="1067.95361" font-weight="400" font-size="14.4px" dy="-5.125">Groceries<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">9,599.98</tspan></text>
+<rect id="label18_bg" class="for_r18" x="3158.12007" y="959.1683" width="63.56547" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label18" class="for_r18" text-anchor="start" x="3162.78497" y="979.69328" font-weight="400" font-size="14.4px" dy="-5.125">Coffee<tspan x="3162.78497" dy="19.32" font-weight="400" font-size="17.6px">404.34</tspan></text>
+<rect id="label19_bg" class="for_r19" x="2529.22261" y="1359.03042" width="134.99516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label19" class="for_r19" text-anchor="start" x="2533.88749" y="1379.55537" font-weight="400" font-size="14.4px" dy="-5.125">Registration + Fees<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">3,674.99</tspan></text>
+<rect id="label20_bg" class="for_r20" x="2529.22261" y="1426.9125" width="63.56547" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label20" class="for_r20" text-anchor="start" x="2533.88749" y="1447.43748" font-weight="400" font-size="14.4px" dy="-5.125">Gas<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">683.29</tspan></text>
+<rect id="label21_bg" class="for_r21" x="2529.22261" y="1482.03042" width="53.77641" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label21" class="for_r21" text-anchor="start" x="2533.88749" y="1502.55546" font-weight="400" font-size="14.4px" dy="-5.125">Tolls<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">89.38</tspan></text>
+<rect id="label22_bg" class="for_r22" x="2529.22261" y="1547.42666" width="147.40141" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label22" class="for_r22" text-anchor="start" x="2533.88749" y="1567.95167" font-weight="400" font-size="14.4px" dy="-5.125">General Merchandise<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">3,531.00</tspan></text>
+<rect id="label23_bg" class="for_r23" x="2529.22261" y="1622.49148" width="107.39359" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label23" class="for_r23" text-anchor="start" x="2533.88749" y="1643.01645" font-weight="400" font-size="14.4px" dy="-5.125">Clothing/Shoes<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">2,817.33</tspan></text>
+<rect id="label24_bg" class="for_r24" x="2529.22261" y="1693.05215" width="79.37016" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label24" class="for_r24" text-anchor="start" x="2533.88749" y="1713.57716" font-weight="400" font-size="14.4px" dy="-5.125">Healthcare<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">2,283.09</tspan></text>
+<rect id="label25_bg" class="for_r25" x="2529.22261" y="1760.27126" width="101.77641" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label25" class="for_r25" text-anchor="start" x="2533.88749" y="1780.79632" font-weight="400" font-size="14.4px" dy="-5.125">Personal Care<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">1,891.51</tspan></text>
+<rect id="label26_bg" class="for_r26" x="2529.22261" y="1823.72085" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label26" class="for_r26" text-anchor="start" x="2533.88749" y="1844.24581" font-weight="400" font-size="14.4px" dy="-5.125">Telephone<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">1,238.66</tspan></text>
+<rect id="label27_bg" class="for_r27" x="2529.22261" y="1883.78298" width="96.17484" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label27" class="for_r27" text-anchor="start" x="2533.88749" y="1904.30795" font-weight="400" font-size="14.4px" dy="-5.125">Subscriptions<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">953.00</tspan></text>
+<rect id="label28_bg" class="for_r28" x="2529.22261" y="1940.42471" width="73.78422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label28" class="for_r28" text-anchor="start" x="2533.88749" y="1960.94969" font-weight="400" font-size="14.4px" dy="-5.125">Education<tspan x="2533.88749" dy="19.32" font-weight="400" font-size="17.6px">291.00</tspan></text>
+<rect id="label29_bg" class="for_r29" x="2482.66719" y="1158.18508" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label29" class="for_r29" text-anchor="middle" x="2521.58995" y="1178.71004" font-weight="400" font-size="14.4px" dy="-5.125">Fun<tspan x="2521.58995" dy="19.32" font-weight="400" font-size="17.6px">6,637.16</tspan></text>
+<rect id="label30_bg" class="for_r30" x="2490.00703" y="1237.04739" width="63.56547" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label30" class="for_r30" text-anchor="middle" x="2521.58995" y="1257.57235" font-weight="400" font-size="14.4px" dy="-5.125">Giving<tspan x="2521.58995" dy="19.32" font-weight="400" font-size="17.6px">763.32</tspan></text>
+<rect id="label31_bg" class="for_r31" x="2490.00703" y="1292.78433" width="63.56547" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label31" class="for_r31" text-anchor="middle" x="2521.58995" y="1313.30932" font-weight="400" font-size="14.4px" dy="-5.125">Other<tspan x="2521.58995" dy="19.32" font-weight="400" font-size="17.6px">230.00</tspan></text>
+<rect id="label32_bg" class="for_r32" x="3111.56489" y="1192.12173" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label32" class="for_r32" text-anchor="middle" x="3150.48743" y="1212.64673" font-weight="400" font-size="14.4px" dy="-5.125">Hobbies<tspan x="3150.48743" dy="19.32" font-weight="400" font-size="17.6px">3,460.38</tspan></text>
+<rect id="label33_bg" class="for_r33" x="3158.12007" y="1116.01443" width="78.24516" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label33" class="for_r33" text-anchor="start" x="3162.78497" y="1136.53947" font-weight="400" font-size="14.4px" dy="-5.125">Travel<tspan x="3162.78497" dy="19.32" font-weight="400" font-size="17.6px">3,176.78</tspan></text>
+<rect id="label34_bg" class="for_r34" x="3158.12007" y="1259.32681" width="63.56547" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label34" class="for_r34" text-anchor="start" x="3162.78497" y="1279.8518" font-weight="400" font-size="14.4px" dy="-5.125">Gifts<tspan x="3162.78497" dy="19.32" font-weight="400" font-size="17.6px">710.32</tspan></text>
+<rect id="label35_bg" class="for_r35" x="3158.12007" y="1314.54238" width="66.54984" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label35" class="for_r35" text-anchor="start" x="3162.78497" y="1335.06734" font-weight="400" font-size="14.4px" dy="-5.125">Charities<tspan x="3162.78497" dy="19.32" font-weight="400" font-size="17.6px">53.00</tspan></text>
+<rect id="label36_bg" class="for_r36" x="3787.01753" y="1173.87869" width="89.53422" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label36" class="for_r36" text-anchor="start" x="3791.68246" y="1194.40364" font-weight="400" font-size="14.4px" dy="-5.125">Videogames<tspan x="3791.68246" dy="19.32" font-weight="400" font-size="17.6px">2,807.63</tspan></text>
+<rect id="label37_bg" class="for_r37" x="3787.01753" y="1237.69009" width="63.56547" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label37" class="for_r37" text-anchor="start" x="3791.68246" y="1258.21511" font-weight="400" font-size="14.4px" dy="-5.125">Art<tspan x="3791.68246" dy="19.32" font-weight="400" font-size="17.6px">422.83</tspan></text>
+<rect id="label38_bg" class="for_r38" x="3787.01753" y="1291.86807" width="60.97172" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label38" class="for_r38" text-anchor="start" x="3791.68246" y="1312.39301" font-weight="400" font-size="14.4px" dy="-5.125">Books<tspan x="3791.68246" dy="19.32" font-weight="400" font-size="17.6px">111.92</tspan></text>
+<rect id="label39_bg" class="for_r39" x="3787.01753" y="1345.0198" width="76.14359" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label39" class="for_r39" text-anchor="start" x="3791.68246" y="1365.5448" font-weight="400" font-size="14.4px" dy="-5.125">Swimming<tspan x="3791.68246" dy="19.32" font-weight="400" font-size="17.6px">65.00</tspan></text>
+<rect id="label40_bg" class="for_r40" x="3787.01753" y="1398.17153" width="76.97953" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label40" class="for_r40" text-anchor="start" x="3791.68246" y="1418.69658" font-weight="400" font-size="14.4px" dy="-5.125">Gardening<tspan x="3791.68246" dy="19.32" font-weight="400" font-size="17.6px">53.00</tspan></text>
+<rect id="label41_bg" class="for_r41" x="3158.12007" y="1368.02432" width="122.58891" height="41.11995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label41" class="for_r41" text-anchor="start" x="3162.78497" y="1388.54927" font-weight="400" font-size="14.4px" dy="-5.125">Italian Citizenship<tspan x="3162.78497" dy="19.32" font-weight="400" font-size="17.6px">230.00</tspan></text>
+</g>
+</g></svg>
