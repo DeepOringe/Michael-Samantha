@@ -228,7 +228,7 @@ div.flexSpaceApart{
 	justify-content: space-between;
 }
 
-div.flexSpaceAround{
+.flexSpaceAround{
 	justify-content: space-around;
 }
 
