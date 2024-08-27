@@ -22,9 +22,33 @@
 	<meta name="author" content="Samantha Siefert">
 </head>
 <style>
-    div.block-header-container{
+   #banner-brennans{
+        height: 100%;
+        width: 100%;
+
         background: #6A9EE5;
+        border-bottom: 20px solid white;
+
+        padding: 1em 1em 0 0;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
+
+    @media all and (min-width: 600px){
+        #banner-brennans{
+            padding: 3em 1em 0 0;
+            justify-content: center;
+        }
+    }
+
+    #banner-brennans h1, h2{
+        color: white;
+        padding: 0;
+        line-height: 1;
+    }
+
 
     h1>span.cursive{
         font-weight: inherit;
@@ -66,7 +90,7 @@
 </style>
 
 <body>
-    <div id="" class="block-header-container">
+    <div id="banner-brennans" class="banner">
         <h2 class="cursive skewLeft">&nbsp;the&nbsp;</h2>
         <div class="flex">
             <h1 class="expand wobble">&nbsp;</h1>
@@ -79,8 +103,7 @@
             <h1 class="expand wobble">n</h1>
             <h1 class="expand wobble">s</h1>
         </div>
-    </div>
-   
+    </div>  
     
     <div class="grid-photo-gallery">
         <div class="grid-photo-3wx2t" style="background: url(images/2022/0_opener.JPEG); background-size: cover; background-position:top right;">
@@ -112,7 +135,7 @@
     </div>
 
     <div class="text-aside">
-        <h3 class="photo-grid-aside">And we baked a LOT of bread.</h3>
+        <h3 class="photo-grid-aside">We baked a LOT of bread.</h3>
     </div>
 
     <div class="grid-photo-gallery">
@@ -122,7 +145,7 @@
     </div>
 
     <div class="text-aside">
-        <h3 class="photo-grid-aside">Huey survived the entire year, and Louie passed the float test! 💪 </h3>
+        <h3 class="photo-grid-aside">Huey survived the entire year, and Louie passed the float&nbsptest! 💪 </h3>
     </div>
     
     <div class="grid-photo-gallery">
@@ -184,7 +207,7 @@
         <img class="grid-photo" src="images/2022/36_MonaLisa.jpeg">
         <img class="grid-photo" src="images/2022/42_Sam+Lucie.jpeg">
         <div class="grid-text">
-            <h3>Sam and Lucie could finally resume their mischief!</h3>
+            <h3>Sam and Lucie finally resumed their&nbspmischief!</h3>
         </div>
         <img class="grid-photo" src="images/2022/44_SpaceInvaders.jpeg">
         <img class="grid-photo" src="images/2022/48_MikeEiffelTower.jpeg">
