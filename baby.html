@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>The Brennans | Are having a baby!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A family story." />
+	<meta name="author" content="Samantha Siefert">
+</head>
+
+<!-- Thanks for looking! This is all an experiment. 
+
+    NOTES:
+
+    The other Coolors color was #e76f51
+-->
+
+<style>
+/*COLORS*/
+
+html{
+    background: #e9c46a;
+}
+
+div.banner{
+    background-color: #264653;
+}
+
+#overview>h1,#overview h2, #overview h3{
+    color:  #2a9d8f;
+    color: #264653;
+
+}
+
+div.invertColors{
+    background-color: #264653;
+    border-color: #2a9d8f;
+}
+
+.insetColors{
+    background-color: #f4a261;
+    /* background-color: var(--orange); */
+
+}
+
+button[type=submit]{
+    background-color: #2a9d8f;
+    background-color: var(--orange);
+
+}
+
+div.sliderContainer::-webkit-scrollbar-thumb{
+    background:  #2a9d8f;
+    background: #264653;
+    background: #f4a261;
+}
+
+
+
+/*LAYOUT*/
+div.banner{
+    width: 100%;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+}
+
+div.banner>h1{
+    z-index: 5;
+}
+
+div.squiggle-divider{
+    border-top: var(--thick-border);
+    margin-top: -2.5rem;
+    height: 2.5rem;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #f4a261 0%, #f4a261 100%); */
+    background-color: #e9c46a;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 20px 20px;
+        color: inherit;
+        text-decoration: none;
+
+}
+
+div.polaroidContainer{
+/*Adapted from style sheet. Changing "height" and "width" to "auto" makes it simple to nest an img rather than the weird background thing that I did. Maybe I should update the engagement page...*/
+	width: auto;
+    height: auto;
+    
+    margin: 3rem;
+}
+
+div.polaroidContainer img{
+    max-width: 100vw;
+    width: 600px;
+}
+
+/*IMAGE SLIDERS*/
+
+img.sliderImg{
+	height: 300px; 
+	width: auto;
+}
+
+img.sliderImg:nth-of-type(1){
+    margin: auto;
+    /* margin-left: 50vw; */
+}
+
+/*WALKING DINO THINGY. This should be moved to main style sheet here and from index styles.*/
+
+    /* dino just for fun */
+    div.dino-walks-container{
+        width: 100%;
+        /*margin-top: -82px; so that dino walks on the header border*/
+        
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    div.dino-walks-container-animated{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 65px; /*bigger than the img.dino-walks so there is no overflow*/
+
+        animation-name: dino-walking;
+        animation-delay: 0s;
+        animation-direction: normal; 
+        animation-duration: 60s;
+        animation-fill-mode: none;
+        animation-iteration-count: infinite;   
+        animation-play-state: running;
+        animation-timing-function: linear;
+    }
+
+    img.dino-walks{
+        height: 45px;
+    }
+  
+    @keyframes dino-walking { 
+        0% {
+            transform: translateX(-100%)
+        }
+        100% {
+            transform: translateX(100%)
+        }
+    }
+
+    #footer{
+        margin: 0;
+    }
+    div.dino-walks-container{
+        margin-bottom: 0px; /*to override styles from index page*/
+    }
+
+
+/*SQUIGGLES*/
+    a.squiggle, button{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 95%;
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    }
+
+    button{
+        padding-bottom: 10px;
+    }
+
+</style>
+
+<body>
+	<div class="flexColumn banner">
+        <!-- <h1>Oh dear!</h1> -->
+        
+        <div class="polaroidContainer skewRight">
+			<div class="polaroidPhoto">
+                <img src="images/2024/TinySonogram.JPG">
+            </div>
+			<p class="label">We hope it's human!</p>
+		</div>
+
+		<h1 class="">We're having a baby!</h1>
+    </div>
+    
+    <div class="squiggle-divider"></div>
+
+	<div id="overview" class="flex100 flexColumn">
+        <h1>Baby Facts</h1>
+        
+                <h3>When does baby arrive?</h3>
+                <h2>Early February&nbsp2025</h2>
+         
+                <h3>Do you know the gender?</h2>
+                <h2>Yes, but it's a&nbspsecret!</h2>
+            
+                <h3>How are you feeling?</h2>
+                <h2>Excited.&nbsp(!)</h2>
+    </div>
+
+	<div id="registry" class="flex800 flexColumn invertColors">
+			<h1>The Registry</h1>
+			<p>Thank you for your help! We are registered with Amazon under the name Michael Brennan.</p>
+			<a class="insetColors squiggle button" target="_blank" href="https://www.amazon.com/baby-reg/michael-brennan-february-2025-austin/B7B2RMJQ5PT5">Amazon Registry Link</a>
+    </div>
+    
+    <div class="flex100 flexColumn">
+		<div class="sliderContainer">
+            
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram19weeks6daysB_Hand.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram19weeks6days.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram13weeks0daysB.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram13weeks0daysA.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram12weeks0daysD_BabyFace.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram12weeks0daysC.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram09weeks3days.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram08weeks4daysA.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram06weeks4days.JPG">
+            <img class="sliderImg" src="images/2024/sonograms/Sonogram06days8mm.JPG">
+
+        </div>
+    </div>
+        
+	<div id="contact" class="flex800 flexColumn invertColors">	
+		<h1>Advice for Baby</h1>
+		<p>Share your thoughts about life on Earth! We will turn your advice into a book for the baby to keep and consult.</p>
+        
+        <form id="adviceForm" class="insetColors" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScENuCke33vclYgXZNaYcg-DAGboUpkYU-UgZJ7K_Ckm3i6xA/formResponse" method="POST">
+			
+			<h3>Share your wisdom</h3>
+
+			<label for="name">Your name(s): </label>
+			<input type="text" name="entry.2117183612" id="name">
+
+			<label for="advice">Your wise words: </label>
+			<textarea id="advice" name="entry.948462161" rows="5" cols="1" placeholder="Welcome! Don't forget to wear sunscreen!"></textarea>
+
+            <label for="name">A book you recommend, for now or later: </label>
+			<input type="text" name="entry.1175071315" id="name">
+			<!-- <label for="file">Your photo (for posterity!):</label>
+			<input type="file" id="c0" name="file"> -->
+
+			<button type="submit">Submit</button>
+			<p id="adviceForm_submitted"></p>
+
+		</form>
+
+		<!-- <h3>Or, write to us!</h3>
+		<p>We love notes! (We really do!) Our current address is </p>
+		<p class="insetColors">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p> -->
+	</div>
+
+    <div class="flex100 flexColumn">
+		<div class="sliderContainer">
+
+				<img class="sliderImg" src="images/2024/babyfruit/MKB10007_19mango.JPG">
+				<img class="sliderImg" src="images/2024/babyfruit/MKB10012_20sweetpotato.JPG">
+				<img class="sliderImg" src="images/2024/babyfruit/MKB10014_20sweetpotato.JPG">
+                <img class="sliderImg" src="images/2024/babyfruit/MKB10015_20sweetpotato.JPG">
+				<img class="sliderImg" src="images/2024/babyfruit/MKB10017_21banana.JPG">
+				<img class="sliderImg" src="images/2024/babyfruit/MKB10018_21banana.JPG">
+        
+        </div>
+    </div>
+
+    <div id="advice" class="flex800 flexColumn invertColors">
+		<h1>Advice for Parents</h1>
+		<p>We're grateful for all advice! Share your favorite parenting ideas and survival tips.</p>
+
+		<form id="adviceForm" class="insetColors" action="https://docs.google.com/forms/d/e/1FAIpQLSeOY5w9GkKvreIaeVjApuR0K-9VULDJKzQDW2X1ExflHY97rg/formResponse" method="POST">
+			
+			<h3>Share your wisdom</h3>
+
+			<label for="name">Your name(s): </label>
+			<input type="text" name="entry.2141877927" id="name">
+
+			<label for="advice">Your wise words: </label>
+			<textarea id="advice" name="entry.529909740" rows="5" cols="1" placeholder="Thank you for your insights!"></textarea>
+
+			<!-- <label for="file">Your photo (for posterity!):</label>
+			<input type="file" id="c0" name="file"> -->
+
+			<button type="submit">Submit</button>
+			<p id="adviceForm_submitted"></p>
+		</form>
+    </div>
+
+    <div id="" class="flex100 flexColumn">
+        <h1 class="cursive">Thank you for your thoughts!</h1>
+       
+            <!-- <p>When the baby arrives we will share some photos here!</p> -->
+            <h3>Stay tuned: When the baby arrives, we will share some photos here.</h3>
+       
+    </div>
+
+    <!-- <div id="vote" class="flex800 flexColumn invertColors">
+		<h1>Boy or Girl?</h1>
+		<p>Just for fun. . .</p>
+		<form id="lastnameForm" class="insetColors" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeqWjqdsHcszqZqL59j2STiKD5QEZH0TL9vmrJ_gx70NwHNZQ/formResponse" method="POST">
+			<h3>Do you think the baby will be a boy or a girl?</h3>
+			
+			
+			<div>
+				<input type="radio" id="Boy"
+				 name="entry.843964884" value="Siefert">
+				<label for="Siefert">Boy</label>
+			</div>
+				
+			<div>
+				<input type="radio" id="Girl"
+				 name="entry.843964884" value="Brennan">
+				<label for="Brennan">Girl</label>
+			</div>
+
+			<div>
+				<input type="radio" id="Alien"
+				 name="entry.843964884" value="Corleone">
+				<label for="Corleone">Alien</label>
+			</div>
+				
+			<button type="submit">Submit</button>
+			<p id="contactForm_submitted"></p>
+		</form>	
+    </div> -->
+
+    <div class="flex100 flexColumn">
+        <div class="polaroidContainer skewRight">
+			<div class="polaroidPhoto">
+                <img src="images/2024/IMG_4214_ERISEDcropped.gif">
+            </div>
+			<p class="label">Good luck, baby!</p>
+        </div>    
+    </div>
+
+    
+    
+    <div class="dino-walks-container">
+        <div class="dino-walks-container-animated">
+            <img class="dino-walks wobble" src="images/dinoIcon_reverse_teal.png">
+        </div>
+    </div>
+	
+<div id="footer" class="flex100">
+	<h2 class="">Come again soon.</h2>
+	<div>
+			<p>Sam is always playing with this website, so you never know what you might find!</p>
+            <p>Miss the engagement website? Don't worry, it's <a href="https://unexpectedly.xyz/engagement">still here.</a>
+            <br>And the wedding photos? They're <a href="https://unexpectedly.xyz/wedding">here too.</a>
+            <br><a href="https://unexpectedly.xyz/">It's all here!</a>
+            
+			<p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+            <p>sam.siefert@gmail.com</p>
+            
+            <p class="cursive exitMusic">exit music</p>
+		
+		    <a href="https://unexpectedly.xyz/"><img id="dinoIcon" src="images/dinoIcon.png"></a> 
+    </div>
+</div>
+
+ <div class="audioContainer">
+     <audio controls>
+         <source src="audio/Radiohead-NoSurprises.mp3" type="audio/mpeg">
+     </audio>
+ </div>
+
+</body>
+</html>
+
+
