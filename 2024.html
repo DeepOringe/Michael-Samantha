@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>The Brennans | 2024</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A family story." />
+	<meta name="author" content="Samantha Siefert">
+</head>
+<style>
+
+    html{
+        background-color: #DAD9E8;
+    }
+
+    div.header-photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3.photo-grid-aside{
+        color: #FFF;
+    }
+
+    h1>span.cursive{
+        font-weight: inherit;
+    }
+    
+    /* large text block styling a la "2022, new year new adventures" */
+    div.text-overview{
+        width: 100%;
+        padding: 4rem 0 2rem 0;
+    }
+
+    div.text-overview>h1, div.text-overview>h2{
+        color: var(--spacecadet);
+    }  
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* disappearing span is copied from 2021 for optional bits of text too lengthy for small screen design and should be added to main css */
+    h3>span.disappearing-span{
+        font-weight: inherit;
+        line-height: inherit;
+    }
+    @media all and (max-width: 700px){ /*700 px on this page; 600px on 2021 page*/
+    h3>span.disappearing-span{
+        display: none;
+        }
+    }
+    
+    div.grid-photo-gallery>*{
+        overflow-x: hidden; /*I just can't find the thing that is overflowing that tiny little bit...*/
+    }
+
+    h2.button{
+        background: var(--orange);
+        padding: 8rem 6rem 8rem 6rem;
+        text-align: center;
+    }
+
+    .clip-animation { 
+      clip-path: polygon(100% 50%,84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%)}
+
+    .clip-animation { 
+      animation: clip 1s infinite
+    }
+
+    @keyframes clip {
+      0% {
+        clip-path: polygon(100% 50%,84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%);
+      }
+      50% {
+        clip-path: polygon(84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%,100% 50%);
+      }
+      100% {
+        clip-path: polygon(91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%,100% 50%,84.70057014808336% 54.5684167277018%);
+      }
+    }
+
+    /* squiggle link effect from css tricks */
+    a.squiggle{
+    background: linear-gradient(to bottom, white 0%, white 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: inherit;
+    text-decoration: none;
+    }
+
+    a.squiggle:hover{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    }
+
+/*3 photo background alternate animation*/
+    div.animate-background-3{
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        animation: alternate_background 5s none infinite;
+    }
+
+</style>
+
+<body>
+    <div id="" class="block-header-container">
+        <h2 class="cursive skewLeft">&nbsp;the&nbsp;</h2>
+        <div class="flex">
+            <h1 class="expand wobble">&nbsp;</h1>
+            <h1 class="expand wobble">B</h1>
+            <h1 class="expand wobble">r</h1>
+            <h1 class="expand wobble">e</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">a</h1>
+            <h1 class="expand wobble">n</h1>
+            <h1 class="expand wobble">s</h1>
+        </div>
+    </div>
+   
+    <div class="grid-photo-gallery">    
+        <div class="header-photo grid-photo grid-photo-3wx2t" style="background: url(images/2024/IMG_1792_BigBendSunnies.JPEG); background-size: cover; background-position:center 70%;">
+            <h1>2024</h1>
+            <h2 class="text-center cursive">a year in review</h2>
+        </div>
+    </div>
+    
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">This was a wild year.</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+        <div class="grid-text grid-photo-2w">
+            <h3>Michael was abducted by&nbspaliens!</h3>
+        </div>
+        
+        <img class="grid-photo" src="images/2024/MKB10381_MichaelAlienAbduction.JPG" style="object-position: center center;">
+        
+        <div class="grid-text">
+            <h3>And we have
+                <br>
+                <a class="squiggle" href="/baby" target="_blank">a baby on the way!</a>
+            </h3>
+                <!-- <br>
+                <br>
+                (Could there be a connection?. . .)</h3> -->
+        </div>
+
+        <img class="grid-photo" src="images/2024/TinySonogram.JPG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/TinySonogram.JPG" style="object-position: center center;">
+
+        
+    </div>
+        
+    
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">(Related events? It's hard to be sure. . .)</h3>
+        <h3 class="photo-grid-aside">In the normal realm, life has treated us well.</h3>
+    </div>
+
+    <!-- <div class="grid-photo-gallery">
+
+        <img class="grid-photo-2w" src="images/2024/MKB10424_BigBend.JPG" style="object-position: center bottom;">
+        
+        <div class="grid-text grid-photo">
+            <h3>We finished 2023 at the Big&nbspBend.</h3>
+        </div>
+
+        <img class="grid-photo" src="images/2024/IMG_1713_RelampagoMaravillaMarfa.JPEG" style="object-position: center center;">
+
+        <div class="grid-text grid-photo">
+            <h3>And the Relampago Maravilla followed us from Marfa back to Austin!</h3>
+        </div>
+
+        <img class="grid-photo" src="images/2024/IMG_3018_RelampagoLagunaGloria.JPEG" style="object-position: center center;">
+
+    </div> -->
+
+    <!-- <div class="text-aside">
+        <h3 class="photo-grid-aside">In the normal realm, life has treated us well.</h3>
+    </div> -->
+
+    <div class="grid-photo-gallery">
+
+        <img class="grid-photo-2w" src="images/2024/MKB10424_BigBend.JPG" style="object-position: center bottom;">
+
+        <div class="grid-text grid-photo">
+            <h3>We finished 2023 at the Big&nbspBend.</h3>
+        </div>    
+
+        <div class="grid-text grid-photo">
+            <h3>And started 2024 with some good&nbspcoffee.</h3>
+        </div> 
+        
+        <img class="grid-photo-2wx2t" src="images/2024/IMG_2028_NewYear.JPEG" style="object-position: center center;">
+
+        <img class="grid-photo" src="images/2024/IMG_5121_BatsKayaking.JPEG" style="object-position: center center;">
+
+        <div class="grid-text grid-photo">
+            <h3>There was some fun on the water. . .</h3>
+        </div>
+
+        <img class="grid-photo" src="images/2024/IMG_5304_RobBartonSprings.JPEG" style="object-position: center center;">
+
+        <img class="grid-photo" src="images/2024/IMG_3500_KayakingMichael+Elwood.gif" style="object-position: center center;">
+
+
+<!--         
+        <div class="grid-text grid-photo">
+            <h3>some funky art. . .</h3>
+        </div> 
+
+        <img class="grid-photo" src="images/2024/IMG_3018_RelampagoLagunaGloria.JPEG" style="object-position: center center;">
+
+        <div class="grid-text grid-photo">
+            <h3>a breathtaking total solar&nbspeclipse. . .</h3>
+        </div> 
+
+        <div class="grid-photo" style="background: url(images/2024/IMG_3059_SolarEclipseNight.JPEG); background-size: cover; background-position:center center;">
+            <div class="animate-background-slowly caption-bottom" style="background: url(images/2024/IMG_3059_SolarEclipseNight.JPEG); background-size: cover; background-position:center center;">
+            </div>    
+        </div> -->
+
+        <div class="grid-text grid-photo">
+            <h3>. . .and a bat rescue!<br>(What a cutie!)</h3>
+        </div> 
+
+        <img class="grid-photo" src="images/2024/IMG_3038_BatRescueGifGifed.gif" style="object-position: center center;">
+
+        <div class="grid-text grid-photo">
+            <h3>We frolicked in the bluebonnets.</h3>
+        </div> 
+
+        <img class="grid-photo" src="images/2024/IMG_2873_BluebonnetsMike.JPEG" style="object-position: center center;">
+
+        <!-- <img class="grid-photo" src="images/2024/IMG_2879_BluebonnetsGifed.gif" style="object-position: center center;"> -->
+
+        <img class="grid-photo" src="images/2024/IMG_2898_HenryBluebonnets.JPEG" style="object-position: center center;">
+
+        <img class="grid-photo" src="images/2024/IMG_2866_BluebonnetsSam.JPEG" style="object-position: center center;">
+
+        <img class="grid-photo" src="images/2024/IMG_2827_SXSW.JPEG" style="object-position: center center;">
+        
+        <div class="grid-text grid-photo">
+            <h3>And braved the crowds at SXSW and ACL.</h3>
+        </div> 
+
+        <img class="grid-photo" src="images/2024/IMG_5447_ACL.JPEG" style="object-position: center center;">
+
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We visited family in Ohio.</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+
+        <div class="grid-text grid-photo">
+            <h3>Meema celebrated her 90th&nbspbirthday!</h3>
+        </div>
+
+        <img class="grid-photo-2w" src="images/2024/IMG_4735_Meema90Birthday.JPEG" style="object-position: center 20%;">
+
+        <img class="grid-photo" src="images/2024/IMG_4026_GrandmaPie.JPEG" style="object-position: center center;">
+        
+        <div class="grid-text grid-photo">
+            <h3>Baby Cooper made his debut!</h3>
+        </div>
+
+        <!-- <img class="grid-photo" src="images/2024/IMG_2531_BabyCooper.JPEG" style="object-position: center center;"> -->
+        
+        <div class="grid-photo" style="background: url(images/2024/IMG_2531_BabyCooper.JPEG); background-size: cover; background-position:center center;">
+            <div class="animate-background-3" style="background: url(images/2024/IMG_2527_BabyCooperImpressionJulie.JPEG); background-size: cover; background-position:top right; animation-delay: 1s;">
+                <div class="animate-background-3" style="background: url(images/2024/IMG_2529_BabyCooperImpressionSam.JPEG); background-size: cover; background-position:top right; animation-delay: 2s;"></div>
+               
+            </div>    
+        </div>
+
+        <div class="grid-text grid-photo">
+            <h3>Sam's cousin Sarah got&nbspmarried!</h3>
+        </div>
+        
+        <img class="grid-photo" src="images/2024/IMG_4040_SarahWedding.JPEG" style="object-position: center center;">
+
+        <div class="grid-text grid-photo">
+            <h3>. . .and everybody <span style="font-style:italic;">got down!</span></h3>
+        </div>
+
+        <img class="grid-photo-2wx2t" src="images/2024/IMG_4070_RonGinnaDanceGifed.gif" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_4076_SarahGillianDanceGifed.gif" style="object-position: center center;">
+        <div class="grid-text">
+            <h3>Congratulations Stephanie&nbsp+&nbspSarah!<br><br>You throw a great party!</h3>
+        </div>
+        <!-- <img class="grid-photo" src="images/2024/IMG_4082_MomDadDance-gifed.gif" style="object-position: center center;"> -->
+
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">The Moodys came to visit!</h3>
+    </div>
+
+    <div class="grid-photo-gallery">   
+        <img class="grid-photo" src="images/2024/IMG_5002_troll.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_2351_MrMoodyMartini.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_5012_RudysFamily.JPEG" style="object-position: center center;">
+        <img class="grid-photo-3w" src="images/2024/IMG_2933_HeatherToes.JPEG" style="object-position: center 70%;">
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We saw our first opera in NYC!</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+        <img class="grid-photo" src="images/2024/IMG_3154_OperaOutside.JPEG" style="object-position: center center;">
+        <img class="grid-photo-2wx2t" src="images/2024/IMG_3145_OperaInside.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_3238_JuliaHugGifGifed.gif" style="object-position: center center;">
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">We met the Swartzwelders in London town.</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+        <img class="grid-photo-2wx2t" src="images/2024/IMG_0650_TowerBridge.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_4270_TelephoneBooth.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_4204_SketchBathroom.JPEG" style="object-position: center center;">
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">And then we headed north to feed some highland coos!</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+        <img class="grid-photo-3wx2t" src="images/2024/IMG_1163_HighlandCoos.JPEG" style="object-position: center center;">
+        <img class="grid-photo" src="images/2024/IMG_4760_SleeperTrain_Gifed.gif" style="object-position: center center;">
+        <img class="grid-photo-2w" src="images/2024/IMG_4540_Castle.JPEG" style="object-position: center center;">
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">Plus, Sam and her parents snuck in a quick trip to Niagara Falls!</h3>
+    </div>
+
+    <div class="grid-photo-gallery">
+        <img class="grid-photo-3wx2t" src="images/2024/IMG_2628_NiagaraFalls.JPEG" style="object-position: center center;">
+    
+        <div class="grid-text">
+            <h3>Sam and her Mom became Italian passport official!<br><br>And we brought Rob into the mix!</h3>
+        </div>
+
+        <img class="grid-photo" src="images/2024/IMG_3303_ItalianConsolato.JPEG" style="object-position: center center;">
+
+    
+    </div>
+    
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">As always, we are thinking of you as the holidays come around. </h3>
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">Especially now, with a baby on the way, we need ALL of your advice! </h3>
+    </div>
+
+    <div class="text-aside">
+        <h3 class="photo-grid-aside">For the baby / abduction details. . .</h3>
+    </div>
+
+    
+    <h2 class="clip-animation button">
+        <a class="squiggle" href="/baby" target="_blank">CLICK HERE</a>
+    </h2>
+    
+
+
+
+
+
+    <div class="text-overview flexColumn">
+		<h1>Happy 2025!</h1>
+		<h2 class="cursive text-center">Who knows what's next?</h2>
+    </div>
+    
+	<div id="footer" class="flex100">
+		<h2 class="">Come again soon.</h2>
+		<div>
+			<p>Sam is always playing with this website, so you never know what you might find!</p>
+            <p>Miss the engagement website? Don't worry, it's <a href="https://unexpectedly.xyz/engagement">still here.</a>
+            <br>And the wedding photos? They're <a href="https://unexpectedly.xyz/wedding">here too.</a>
+            <br>Plus everything else? It's <a href="https://unexpectedly.xyz/">all here!</a>
+            
+			<p class="">Michael + Samantha<br>9011 Yucca Mountain Road<br>Austin, Texas 78759</p>
+			<p>sam.siefert@gmail.com</p>
+		</div>
+
+		<p class="cursive exitMusic">exit music</p>
+		
+		<a href="https://unexpectedly.xyz/"><img id="dinoIcon" src="images/dinoIcon.png"></a> 
+
+	</div>
+	<div class="audioContainer">
+		<audio controls>
+			<source src="audio/RoyelOtis-OystersinMyPocket.mp3" type="audio/mpeg">
+		</audio>
+	</div>	
+</body>
+</html>
