@@ -1017,18 +1017,24 @@ div.grid-photo-gallery{
     }
 
 
-	/* VIDEO CROP */
+/* Updated mp4videos instead of gifs */
 
-	.videoCrop {
+	.videoCrop{
     width: 600px;
     height: 600px;
     overflow: hidden;
 }
 
-.videoCrop video {
+.videoCrop video{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+.grid-photo-gallery video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
